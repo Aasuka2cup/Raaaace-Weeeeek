@@ -5,6 +5,13 @@ Based on https://fantasy.formula1.com/en/game-rules
 2026 rules: Sprint DNF/DSQ reduced to -10 points.
 """
 
+from typing import Optional
+
+# Positions gained/lost and overtakes (per official rules)
+POSITION_GAINED_POINTS = 1
+POSITION_LOST_POINTS = -1
+OVERTAKE_POINTS = 1
+
 # Qualifying - Driver positions
 QUALIFYING_DRIVER_POINTS = {
     1: 10,
@@ -59,7 +66,68 @@ RACE_DRIVER_POINTS = {
 }
 RACE_DNF_PENALTY = -20
 RACE_FASTEST_LAP = 10
-RACE_DOTD = 10  # Driver of the Day (driver only)
+RACE_DOTD = 10  # Driver of the Day (driver only, NOT counted for constructors)
+
+# Constructor-specific penalties (2026: DQ penalties apply to constructor)
+CONSTRUCTOR_SPRINT_DQ_PENALTY = -10  # per disqualified driver
+CONSTRUCTOR_RACE_DQ_PENALTY = -20  # per disqualified driver
+
+# Pitstop times (race only, not sprint) - constructor points by fastest pitstop
+# Times in seconds; (min_inclusive, max_inclusive) -> points
+PITSTOP_POINTS = [
+    (3.01, float("inf"), 0),   # Over 3.0s
+    (2.5, 2.99, 2),            # 2.50 - 2.99s
+    (2.2, 2.49, 5),           # 2.20 - 2.49s
+    (2.0, 2.19, 10),          # 2.00 - 2.19s
+    (0, 1.99, 20),            # Under 2.0s
+]
+PITSTOP_FASTEST_BONUS = 5
+PITSTOP_WORLD_RECORD_BONUS = 15  # current record 1.8s (McLaren Qatar 2023)
+
+
+def pitstop_points(
+    pitstop_time_seconds: float,
+    is_fastest_of_race: bool = False,
+    is_world_record: bool = False,
+) -> int:
+    """
+    Constructor pitstop points (race only).
+    pitstop_time_seconds: team's fastest pitstop in the race.
+    """
+    pts = 0
+    for min_s, max_s, value in PITSTOP_POINTS:
+        if min_s <= pitstop_time_seconds <= max_s:
+            pts = value
+            break
+    if is_fastest_of_race:
+        pts += PITSTOP_FASTEST_BONUS
+    if is_world_record:
+        pts += PITSTOP_WORLD_RECORD_BONUS
+    return pts
+
+
+def compute_constructor_race_bonuses(
+    pitstop_time_seconds: Optional[float] = None,
+    is_fastest_pitstop: bool = False,
+    is_pitstop_world_record: bool = False,
+    disqualified_drivers: int = 0,
+) -> int:
+    """
+    Constructor race bonuses: pitstop points + DQ penalties.
+    Returns 0 if no pitstop data (grand prix only, not sprint).
+    """
+    bonus = 0
+    if pitstop_time_seconds is not None:
+        bonus += pitstop_points(
+            pitstop_time_seconds, is_fastest_pitstop, is_pitstop_world_record
+        )
+    bonus += disqualified_drivers * CONSTRUCTOR_RACE_DQ_PENALTY
+    return bonus
+
+
+def compute_constructor_sprint_bonuses(disqualified_drivers: int = 0) -> int:
+    """Constructor sprint bonuses: DQ penalty only (-10 per driver)."""
+    return disqualified_drivers * CONSTRUCTOR_SPRINT_DQ_PENALTY
 
 
 def qualifying_driver_points(position: int, dnf_or_dsq: bool = False) -> int:
@@ -73,13 +141,17 @@ def sprint_driver_points(
     position: int,
     dnf_or_dsq: bool = False,
     positions_gained: int = 0,
+    positions_lost: int = 0,
+    overtakes: int = 0,
     fastest_lap: bool = False,
 ) -> int:
-    """Points for driver sprint result."""
+    """Points for driver sprint result (2026 rules)."""
     if dnf_or_dsq:
         return SPRINT_DNF_PENALTY
     pts = SPRINT_DRIVER_POINTS.get(position, 0)
-    pts += positions_gained  # 1 per position gained
+    pts += positions_gained * POSITION_GAINED_POINTS
+    pts += positions_lost * POSITION_LOST_POINTS
+    pts += overtakes * OVERTAKE_POINTS
     if fastest_lap:
         pts += SPRINT_FASTEST_LAP
     return pts
@@ -89,14 +161,18 @@ def race_driver_points(
     position: int,
     dnf_or_dsq: bool = False,
     positions_gained: int = 0,
+    positions_lost: int = 0,
+    overtakes: int = 0,
     fastest_lap: bool = False,
     driver_of_day: bool = False,
 ) -> int:
-    """Points for driver race result."""
+    """Points for driver race result (2026 rules)."""
     if dnf_or_dsq:
         return RACE_DNF_PENALTY
     pts = RACE_DRIVER_POINTS.get(position, 0)
-    pts += positions_gained
+    pts += positions_gained * POSITION_GAINED_POINTS
+    pts += positions_lost * POSITION_LOST_POINTS
+    pts += overtakes * OVERTAKE_POINTS
     if fastest_lap:
         pts += RACE_FASTEST_LAP
     if driver_of_day:
@@ -110,16 +186,20 @@ def calculate_driver_points(
     sprint_pos=None,
     sprint_dnf: bool = False,
     sprint_positions_gained: int = 0,
+    sprint_positions_lost: int = 0,
+    sprint_overtakes: int = 0,
     sprint_fastest_lap: bool = False,
     race_pos=None,
     race_dnf: bool = False,
     race_positions_gained: int = 0,
+    race_positions_lost: int = 0,
+    race_overtakes: int = 0,
     race_fastest_lap: bool = False,
     race_dotd: bool = False,
     has_sprint: bool = False,
 ) -> int:
     """
-    Calculate total fantasy points for a driver in a race weekend.
+    Calculate total fantasy points for a driver in a race weekend (2026 rules).
     """
     total = 0
 
@@ -130,13 +210,78 @@ def calculate_driver_points(
     # Sprint (if weekend has sprint)
     if has_sprint and (sprint_pos is not None or sprint_dnf):
         total += sprint_driver_points(
-            sprint_pos or 20, sprint_dnf, sprint_positions_gained, sprint_fastest_lap
+            sprint_pos or 20,
+            sprint_dnf,
+            sprint_positions_gained,
+            sprint_positions_lost,
+            sprint_overtakes,
+            sprint_fastest_lap,
         )
 
     # Race
     if race_pos is not None or race_dnf:
         total += race_driver_points(
-            race_pos or 20, race_dnf, race_positions_gained, race_fastest_lap, race_dotd
+            race_pos or 20,
+            race_dnf,
+            race_positions_gained,
+            race_positions_lost,
+            race_overtakes,
+            race_fastest_lap,
+            race_dotd,
         )
 
     return total
+
+
+def calculate_driver_points_breakdown(
+    qual_pos=None,
+    qual_dnf: bool = False,
+    sprint_pos=None,
+    sprint_dnf: bool = False,
+    sprint_positions_gained: int = 0,
+    sprint_positions_lost: int = 0,
+    sprint_overtakes: int = 0,
+    sprint_fastest_lap: bool = False,
+    race_pos=None,
+    race_dnf: bool = False,
+    race_positions_gained: int = 0,
+    race_positions_lost: int = 0,
+    race_overtakes: int = 0,
+    race_fastest_lap: bool = False,
+    race_dotd: bool = False,
+    has_sprint: bool = False,
+) -> dict[str, float]:
+    """
+    Return per-term breakdown of driver points (for logging/debugging).
+    Keys: qualy, sprint, race_pos, race_gained, race_lost, race_overtakes, race_fl, race_dotd, total
+    """
+    breakdown: dict[str, float] = {
+        "qualy": 0, "sprint": 0, "race_pos": 0, "race_gained": 0,
+        "race_lost": 0, "race_overtakes": 0, "race_fl": 0, "race_dotd": 0,
+    }
+    qualy_pts = qualifying_driver_points(qual_pos or 20, qual_dnf) if (qual_pos is not None or qual_dnf) else 0
+    breakdown["qualy"] = qualy_pts
+
+    if has_sprint and (sprint_pos is not None or sprint_dnf):
+        sprint_pts = sprint_driver_points(
+            sprint_pos or 20, sprint_dnf,
+            sprint_positions_gained, sprint_positions_lost,
+            sprint_overtakes, sprint_fastest_lap,
+        )
+        breakdown["sprint"] = sprint_pts
+
+    if race_pos is not None or race_dnf:
+        race_pos_pts = RACE_DRIVER_POINTS.get(race_pos or 20, 0) if not race_dnf else RACE_DNF_PENALTY
+        breakdown["race_pos"] = race_pos_pts
+        breakdown["race_gained"] = race_positions_gained * POSITION_GAINED_POINTS
+        breakdown["race_lost"] = race_positions_lost * POSITION_LOST_POINTS
+        breakdown["race_overtakes"] = race_overtakes * OVERTAKE_POINTS
+        breakdown["race_fl"] = RACE_FASTEST_LAP if race_fastest_lap else 0
+        breakdown["race_dotd"] = RACE_DOTD if race_dotd else 0
+
+    breakdown["total"] = (
+        breakdown["qualy"] + breakdown["sprint"] + breakdown["race_pos"]
+        + breakdown["race_gained"] + breakdown["race_lost"] + breakdown["race_overtakes"]
+        + breakdown["race_fl"] + breakdown["race_dotd"]
+    )
+    return breakdown

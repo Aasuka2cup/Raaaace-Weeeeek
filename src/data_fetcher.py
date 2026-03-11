@@ -19,6 +19,9 @@ logger = logging.getLogger(__name__)
 # F1 API - data source for f1fantasytools.com
 F1API_BASE = "https://f1api.dev/api"
 
+# OpenF1 API - overtake data (f1api.dev has no overtakes)
+OPENF1_BASE = "https://api.openf1.org/v1"
+
 # Round/venue abbreviations -> round number (2026 calendar order)
 ROUND_ALIASES = {
     "1": 1, "r1": 1, "aus": 1, "australia": 1, "melbourne": 1, "albert_park": 1,
@@ -194,14 +197,19 @@ def parse_f1api_qualy_results(data: dict) -> tuple[dict[int, int], dict[int, dic
         if num is None:
             continue
 
-        grid_pos = r.get("gridPosition")
-        if grid_pos not in (None, "-", ""):
-            try:
-                positions[num] = int(grid_pos)
-            except (ValueError, TypeError):
-                positions[num] = 99
+        # No time set in Q1 = NC/DSQ penalty (-5 pts)
+        q1 = r.get("q1")
+        if q1 in (None, "", "-"):
+            positions[num] = 99  # NC/No time set
         else:
-            positions[num] = 99  # DNQ
+            grid_pos = r.get("gridPosition")
+            if grid_pos not in (None, "-", ""):
+                try:
+                    positions[num] = int(grid_pos)
+                except (ValueError, TypeError):
+                    positions[num] = 99
+            else:
+                positions[num] = 99  # DNQ
 
         name = f"{driver.get('name', '')} {driver.get('surname', '')}".strip()
         driver_info[num] = {
@@ -211,6 +219,41 @@ def parse_f1api_qualy_results(data: dict) -> tuple[dict[int, int], dict[int, dic
         }
 
     return positions, driver_info
+
+
+def fetch_openf1_overtakes(year: int, round_num: int) -> dict[int, int]:
+    """
+    Fetch overtake counts per driver from OpenF1 API.
+    Returns driver_number -> overtake count. Empty dict on failure.
+    OpenF1 has overtake data from 2023 onward; f1api.dev has none.
+    """
+    try:
+        sessions_url = f"{OPENF1_BASE}/sessions?year={year}&session_name=Race"
+        resp = requests.get(sessions_url, timeout=15)
+        resp.raise_for_status()
+        sessions = resp.json()
+        if not sessions:
+            return {}
+        # Sort by date_start; round 1 = first race, etc.
+        sessions.sort(key=lambda s: s.get("date_start", ""))
+        if round_num < 1 or round_num > len(sessions):
+            return {}
+        session_key = sessions[round_num - 1].get("session_key")
+        if session_key is None:
+            return {}
+        overtakes_url = f"{OPENF1_BASE}/overtakes?session_key={session_key}"
+        resp = requests.get(overtakes_url, timeout=15)
+        resp.raise_for_status()
+        overtakes = resp.json()
+        counts: dict[int, int] = {}
+        for o in overtakes:
+            num = o.get("overtaking_driver_number")
+            if num is not None:
+                counts[num] = counts.get(num, 0) + 1
+        return counts
+    except requests.RequestException as e:
+        logger.debug("OpenF1 overtakes fetch failed: %s", e)
+        return {}
 
 
 def load_fallback_prices(path: Optional[Path] = None) -> Optional[dict]:
