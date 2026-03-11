@@ -55,6 +55,37 @@ python main.py --data-dir thirdparty/fantasy-data/latest
 python main.py -v
 ```
 
+### Supported round/venue names
+
+`--round` accepts a number (1–24), `r1`–`r24`, or venue name:
+
+| Round | Venue names |
+|-------|-------------|
+| 1 | aus, australia, melbourne |
+| 2 | chn, china, shanghai |
+| 3 | jpn, japan, suzuka |
+| 4 | bah, bahrain, sakhir |
+| 5 | sau, saudi, jeddah |
+| 6 | mia, miami |
+| 7 | imo, imola |
+| 8 | mon, monaco, monte_carlo |
+| 9 | esp, spain, barcelona, catalunya |
+| 10 | can, canada, montreal |
+| 11 | aut, austria, spielberg |
+| 12 | gbr, britain, silverstone |
+| 13 | hun, hungary, budapest, hungaroring |
+| 14 | bel, belgium, spa |
+| 15 | ned, netherlands, zandvoort |
+| 16 | ita, italy, monza |
+| 17 | aze, azerbaijan, baku |
+| 18 | sgp, singapore |
+| 19 | usa, austin, cota |
+| 20 | mex, mexico |
+| 21 | bra, brazil, interlagos, sao_paulo |
+| 22 | vegas, las_vegas |
+| 23 | qat, qatar, lusail |
+| 24 | uae, abu_dhabi, yas_marina |
+
 ### Mode options
 
 | Mode | Description |
@@ -96,17 +127,53 @@ cd ../..
 python main.py --data-dir thirdparty/fantasy-data/latest
 ```
 
+**Save to year-specific directories** (e.g. for 2026 and 2025):
+
+```bash
+node fantasy_scraper_V3.1.js --season 2026 --output-dir .
+# Writes to 2026/ only (latest/ unchanged)
+```
+
+**Run drivers or constructors separately** (e.g. if one fails):
+
+```bash
+node fantasy_scraper_V3.1.js --drivers-only    # or -d
+node fantasy_scraper_V3.1.js --constructors-only  # or -c
+```
+
+**Use year-specific data in main.py**:
+
+```bash
+# Pass base path; main.py resolves to {path}/{year} or {path}/latest
+python main.py --data-dir thirdparty/fantasy-data --year 2026 --round 1
+
+# lastyear mode: uses {path}/{data_season} (e.g. 2025 folder for Monaco 2025)
+python main.py --data-dir thirdparty/fantasy-data --round monaco --mode lastyear
+```
+
 Requires Node.js. The scraper opens a browser and extracts driver/constructor breakdowns.
 
 ## Updating Fallback Prices
 
-Update `data/fallback_prices.json` from [f1fantasytools.com/statistics](https://f1fantasytools.com/statistics) with current driver and constructor prices.
+Update `data/fallback_prices.json` from fantasy-data:
+
+```bash
+python scripts/update_fallback_prices.py
+# Uses thirdparty/fantasy-data/latest by default
+
+python scripts/update_fallback_prices.py --season 2026
+# Uses thirdparty/fantasy-data/2026
+```
+
+Run the scraper first to refresh data. Use `--dry-run` to preview without writing.
 
 ## Project Structure
 
 ```
 F1-Fantasy-Strategist/
 ├── main.py              # Entry point
+├── scripts/
+│   └── update_fallback_prices.py  # Sync prices from fantasy-data
 ├── src/
 │   ├── data_fetcher.py  # F1 API client (f1api.dev)
 │   ├── fantasy_data.py  # Fantasy points (GitHub or local)

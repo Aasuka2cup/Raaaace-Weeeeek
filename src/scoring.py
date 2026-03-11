@@ -37,7 +37,10 @@ CONSTRUCTOR_QUALIFYING = {
     "disqualified_per_driver": -5,
 }
 
-# Sprint - Driver positions
+# Sprint - Driver (separate rules from Race)
+# Drivers: Positions Gained +1, Positions Lost -1, Overtakes +1, Fastest Lap +5
+# Sprint Result: 1st=8, 2nd=7, ..., 8th=1; 9th-20th=0; DNF/DSQ/NC=-10
+# Constructors: sum of two drivers + DQ penalty (-10 per driver)
 SPRINT_DRIVER_POINTS = {
     1: 8,
     2: 7,
@@ -145,7 +148,10 @@ def sprint_driver_points(
     overtakes: int = 0,
     fastest_lap: bool = False,
 ) -> int:
-    """Points for driver sprint result (2026 rules)."""
+    """
+    Points for driver sprint result (2026 rules).
+    Sprint has its own rules: position pts (1-8), +gained -lost, +overtakes, +fastest lap (5), DNF=-10.
+    """
     if dnf_or_dsq:
         return SPRINT_DNF_PENALTY
     pts = SPRINT_DRIVER_POINTS.get(position, 0)
@@ -253,22 +259,30 @@ def calculate_driver_points_breakdown(
 ) -> dict[str, float]:
     """
     Return per-term breakdown of driver points (for logging/debugging).
-    Keys: qualy, sprint, race_pos, race_gained, race_lost, race_overtakes, race_fl, race_dotd, total
+    Keys: qualy, sprint, sprint_gained, sprint_lost, sprint_overtakes, sprint_fl,
+          race_pos, race_gained, race_lost, race_overtakes, race_fl, race_dotd, total
     """
     breakdown: dict[str, float] = {
-        "qualy": 0, "sprint": 0, "race_pos": 0, "race_gained": 0,
-        "race_lost": 0, "race_overtakes": 0, "race_fl": 0, "race_dotd": 0,
+        "qualy": 0, "sprint": 0, "sprint_pos": 0, "sprint_gained": 0, "sprint_lost": 0,
+        "sprint_overtakes": 0, "sprint_fl": 0,
+        "race_pos": 0, "race_gained": 0, "race_lost": 0,
+        "race_overtakes": 0, "race_fl": 0, "race_dotd": 0,
     }
     qualy_pts = qualifying_driver_points(qual_pos or 20, qual_dnf) if (qual_pos is not None or qual_dnf) else 0
     breakdown["qualy"] = qualy_pts
 
     if has_sprint and (sprint_pos is not None or sprint_dnf):
-        sprint_pts = sprint_driver_points(
-            sprint_pos or 20, sprint_dnf,
-            sprint_positions_gained, sprint_positions_lost,
-            sprint_overtakes, sprint_fastest_lap,
-        )
-        breakdown["sprint"] = sprint_pts
+        sprint_pos_pts = SPRINT_DNF_PENALTY if sprint_dnf else SPRINT_DRIVER_POINTS.get(sprint_pos or 20, 0)
+        sprint_gained_pts = sprint_positions_gained * POSITION_GAINED_POINTS
+        sprint_lost_pts = sprint_positions_lost * POSITION_LOST_POINTS
+        sprint_ovt_pts = sprint_overtakes * OVERTAKE_POINTS
+        sprint_fl_pts = SPRINT_FASTEST_LAP if sprint_fastest_lap else 0
+        breakdown["sprint_pos"] = sprint_pos_pts
+        breakdown["sprint_gained"] = sprint_gained_pts
+        breakdown["sprint_lost"] = sprint_lost_pts
+        breakdown["sprint_overtakes"] = sprint_ovt_pts
+        breakdown["sprint_fl"] = sprint_fl_pts
+        breakdown["sprint"] = sprint_pos_pts + sprint_gained_pts + sprint_lost_pts + sprint_ovt_pts + sprint_fl_pts
 
     if race_pos is not None or race_dnf:
         race_pos_pts = RACE_DRIVER_POINTS.get(race_pos or 20, 0) if not race_dnf else RACE_DNF_PENALTY

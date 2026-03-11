@@ -1,40 +1,194 @@
 {
-  "_comment": "Update from https://f1fantasytools.com/statistics - 2026 grid",
+  "_comment": "Updated from thirdparty/fantasy-data/latest (f1fantasytools.com)",
   "drivers": [
-    {"id": "1", "name": "Max Verstappen", "team_id": "red_bull", "price": 28.0},
-    {"id": "2", "name": "George Russell", "team_id": "mercedes", "price": 27.5},
-    {"id": "3", "name": "Kimi Antonelli", "team_id": "mercedes", "price": 26.0},
-    {"id": "4", "name": "Charles Leclerc", "team_id": "ferrari", "price": 27.0},
-    {"id": "5", "name": "Lewis Hamilton", "team_id": "ferrari", "price": 26.0},
-    {"id": "6", "name": "Lando Norris", "team_id": "mclaren", "price": 25.5},
-    {"id": "7", "name": "Oscar Piastri", "team_id": "mclaren", "price": 24.5},
-    {"id": "8", "name": "Carlos Sainz", "team_id": "williams", "price": 22.0},
-    {"id": "9", "name": "Sergio Perez", "team_id": "cadillac", "price": 20.0},
-    {"id": "10", "name": "Fernando Alonso", "team_id": "aston_martin", "price": 18.0},
-    {"id": "11", "name": "Pierre Gasly", "team_id": "alpine", "price": 14.0},
-    {"id": "12", "name": "Alexander Albon", "team_id": "williams", "price": 13.5},
-    {"id": "13", "name": "Lance Stroll", "team_id": "aston_martin", "price": 12.0},
-    {"id": "14", "name": "Oliver Bearman", "team_id": "haas", "price": 11.0},
-    {"id": "15", "name": "Arvid Lindblad", "team_id": "rb", "price": 10.5},
-    {"id": "16", "name": "Gabriel Bortoleto", "team_id": "audi", "price": 10.0},
-    {"id": "17", "name": "Liam Lawson", "team_id": "rb", "price": 9.5},
-    {"id": "18", "name": "Esteban Ocon", "team_id": "haas", "price": 9.0},
-    {"id": "19", "name": "Franco Colapinto", "team_id": "alpine", "price": 8.5},
-    {"id": "20", "name": "Valtteri Bottas", "team_id": "cadillac", "price": 8.0},
-    {"id": "21", "name": "Isack Hadjar", "team_id": "red_bull", "price": 7.5},
-    {"id": "22", "name": "Nico Hulkenberg", "team_id": "audi", "price": 7.0}
+    {
+      "id": "1",
+      "name": "Max Verstappen",
+      "team_id": "red_bull",
+      "price": 28.0
+    },
+    {
+      "id": "2",
+      "name": "George Russell",
+      "team_id": "mercedes",
+      "price": 27.7
+    },
+    {
+      "id": "3",
+      "name": "Lando Norris",
+      "team_id": "mclaren",
+      "price": 27.1
+    },
+    {
+      "id": "4",
+      "name": "Oscar Piastri",
+      "team_id": "mclaren",
+      "price": 25.2
+    },
+    {
+      "id": "5",
+      "name": "Kimi Antonelli",
+      "team_id": "mercedes",
+      "price": 23.5
+    },
+    {
+      "id": "6",
+      "name": "Charles Leclerc",
+      "team_id": "ferrari",
+      "price": 23.1
+    },
+    {
+      "id": "7",
+      "name": "Lewis Hamilton",
+      "team_id": "ferrari",
+      "price": 22.6
+    },
+    {
+      "id": "8",
+      "name": "Isack Hadjar",
+      "team_id": "red_bull",
+      "price": 14.5
+    },
+    {
+      "id": "9",
+      "name": "Pierre Gasly",
+      "team_id": "alpine",
+      "price": 12.2
+    },
+    {
+      "id": "10",
+      "name": "Carlos Sainz",
+      "team_id": "williams",
+      "price": 11.6
+    },
+    {
+      "id": "11",
+      "name": "Alexander Albon",
+      "team_id": "williams",
+      "price": 11.4
+    },
+    {
+      "id": "12",
+      "name": "Fernando Alonso",
+      "team_id": "aston_martin",
+      "price": 9.4
+    },
+    {
+      "id": "13",
+      "name": "Oliver Bearman",
+      "team_id": "haas",
+      "price": 8.0
+    },
+    {
+      "id": "14",
+      "name": "Esteban Ocon",
+      "team_id": "haas",
+      "price": 7.9
+    },
+    {
+      "id": "15",
+      "name": "Lance Stroll",
+      "team_id": "aston_martin",
+      "price": 7.4
+    },
+    {
+      "id": "16",
+      "name": "Gabriel Bortoleto",
+      "team_id": "audi",
+      "price": 7.0
+    },
+    {
+      "id": "17",
+      "name": "Arvid Lindblad",
+      "team_id": "rb",
+      "price": 6.8
+    },
+    {
+      "id": "18",
+      "name": "Franco Colapinto",
+      "team_id": "alpine",
+      "price": 6.4
+    },
+    {
+      "id": "19",
+      "name": "Liam Lawson",
+      "team_id": "rb",
+      "price": 6.3
+    },
+    {
+      "id": "20",
+      "name": "Nico Hulkenberg",
+      "team_id": "audi",
+      "price": 6.2
+    },
+    {
+      "id": "21",
+      "name": "Sergio Perez",
+      "team_id": "cadillac",
+      "price": 5.8
+    },
+    {
+      "id": "22",
+      "name": "Valtteri Bottas",
+      "team_id": "cadillac",
+      "price": 5.3
+    }
   ],
   "constructors": [
-    {"id": "red_bull", "name": "Red Bull Racing", "price": 26.0},
-    {"id": "mercedes", "name": "Mercedes", "price": 25.0},
-    {"id": "ferrari", "name": "Ferrari", "price": 24.5},
-    {"id": "mclaren", "name": "McLaren", "price": 24.0},
-    {"id": "williams", "name": "Williams", "price": 17.0},
-    {"id": "aston_martin", "name": "Aston Martin", "price": 14.5},
-    {"id": "alpine", "name": "Alpine", "price": 11.5},
-    {"id": "rb", "name": "Racing Bulls", "price": 9.5},
-    {"id": "haas", "name": "Haas", "price": 8.0},
-    {"id": "audi", "name": "Audi", "price": 7.5},
-    {"id": "cadillac", "name": "Cadillac", "price": 7.0}
+    {
+      "id": "alpine",
+      "name": "Alpine",
+      "price": 13.1
+    },
+    {
+      "id": "aston_martin",
+      "name": "Aston Martin",
+      "price": 9.7
+    },
+    {
+      "id": "audi",
+      "name": "Audi",
+      "price": 6.0
+    },
+    {
+      "id": "cadillac",
+      "name": "Cadillac",
+      "price": 5.4
+    },
+    {
+      "id": "ferrari",
+      "name": "Ferrari",
+      "price": 23.6
+    },
+    {
+      "id": "haas",
+      "name": "Haas",
+      "price": 8.0
+    },
+    {
+      "id": "mclaren",
+      "name": "McLaren",
+      "price": 28.8
+    },
+    {
+      "id": "mercedes",
+      "name": "Mercedes",
+      "price": 29.6
+    },
+    {
+      "id": "rb",
+      "name": "Racing Bulls",
+      "price": 6.9
+    },
+    {
+      "id": "red_bull",
+      "name": "Red Bull Racing",
+      "price": 28.5
+    },
+    {
+      "id": "williams",
+      "name": "Williams",
+      "price": 12.6
+    }
   ]
 }

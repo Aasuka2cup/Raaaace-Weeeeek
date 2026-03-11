@@ -52,6 +52,7 @@ ROUND_TO_VENUE = {
 from src.fantasy_data import (
     fetch_overtakes_from_fantasy_data,
     get_constructor_points_from_fantasy_data,
+    get_driver_breakdown_from_fantasy_data,
     get_driver_points_from_fantasy_data,
 )
 from src.optimizer import Constructor, Driver, find_optimal_team
@@ -142,8 +143,8 @@ def main():
     parser.add_argument(
         "--data-dir",
         metavar="PATH",
-        help="Local fantasy-data directory (e.g. output of fantasy_scraper_V3.1.js). "
-        "Expects driver_data/ and constructor_data/ subdirs. Overrides GitHub.",
+        help="Local fantasy-data directory. Can be a specific folder (e.g. .../latest or .../2026) "
+        "or a base path (e.g. .../fantasy-data) – then uses {path}/{year} or {path}/latest.",
     )
     parser.add_argument("--verbose", "-v", action="store_true")
     args = parser.parse_args()
@@ -152,6 +153,9 @@ def main():
     if data_dir and not data_dir.is_dir():
         logger.error("--data-dir %s is not a directory", data_dir)
         return 1
+
+    # data_dir resolution by year happens after we know data_season (for lastyear mode)
+    data_dir_base = data_dir  # base path for year subdirs
 
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
@@ -211,6 +215,31 @@ def main():
         logger.info("\nMode: %s (using data from %d Round %d)", args.mode, data_season, data_round)
     logger.info("\nTarget: %s (Round %d)", target_circuit, target_round)
 
+    # Resolve data_dir by data_season (for lastyear: use 2025 folder)
+    if data_dir_base:
+        base = data_dir_base
+        # If path is .../latest or .../2026, treat parent as base so we can pick data_season
+        if (data_dir_base / "driver_data").is_dir() and data_dir_base.name in ("latest", "2024", "2025", "2026"):
+            base = data_dir_base.parent
+        if not (base / "driver_data").is_dir():
+            year_dir = base / str(data_season)
+            latest_dir = base / "latest"
+            if year_dir.is_dir():
+                data_dir = year_dir
+                if data_season != args.year:
+                    logger.info("Fantasy data: using %d folder %s", data_season, data_dir)
+            elif latest_dir.is_dir():
+                data_dir = latest_dir
+                if data_season != args.year:
+                    logger.warning(
+                        "Fantasy data: no %d folder, using latest (may mismatch lastyear)",
+                        data_season,
+                    )
+            else:
+                data_dir = data_dir_base
+        else:
+            data_dir = data_dir_base
+
     races = race_data.get("races", {})
     round_num = data_round
     season = data_season
@@ -240,7 +269,11 @@ def main():
     sprint_data = fetch_f1api_sprint_race(season, round_num)
     if sprint_data:
         races_obj = sprint_data.get("races", {})
-        sprint_results = races_obj.get("sprintResults") or races_obj.get("results", [])
+        sprint_results = (
+            races_obj.get("sprintRaceResults")
+            or races_obj.get("sprintResults")
+            or races_obj.get("results", [])
+        )
         if sprint_results:
             # Parse sprint - format similar to race
             sprint_positions = {}
@@ -301,7 +334,7 @@ def main():
         None,
     )
     fantasy_driver_pts = None
-    if args.mode == MODE_TARGET and round_num and not args.computed:
+    if round_num and data_dir and not args.computed:
         fantasy_driver_pts = get_driver_points_from_fantasy_data(
             driver_info, round_num, race_winner_driver_num=race_winner, data_dir=data_dir
         )
@@ -326,7 +359,7 @@ def main():
         has_sprint=bool(sprint_positions),
     )
     fantasy_const_pts = None
-    if args.mode == MODE_TARGET and round_num and fantasy_driver_pts:
+    if round_num and fantasy_driver_pts:
         fantasy_const_pts = get_constructor_points_from_fantasy_data(
             set(driver_to_team.values()), round_num, data_dir=data_dir
         )
@@ -338,60 +371,80 @@ def main():
     else:
         constructor_points = computed_constructor_points
 
-    # Log breakdown when using computed points (helps verify vs f1fantasytools.com)
-    if args.mode in (MODE_LASTYEAR, MODE_LASTRACE) or not fantasy_driver_pts:
-        pts_to_log = computed_driver_points
-        const_pts_to_log = computed_constructor_points
-        team_id_to_name = {info.get("team_id", ""): info.get("team_name", "") for info in driver_info.values()}
-        logger.info("")
-        logger.info("  Points from %d Round %d:", data_season, data_round)
-        if not fantasy_driver_pts and not overtakes_race:
-            logger.info("  (Computed points are lower than f1fantasytools.com: no overtake data available)")
-        # Driver points breakdown table
-        cols = ["Driver", "Qualy", "Sprint", "Race", "+Gain", "-Lost", "Ovt", "FL", "DOTD", "Total"]
-        has_sprint = sprint_positions is not None and len(sprint_positions) > 0
-        if not has_sprint:
-            cols = ["Driver", "Qualy", "Race", "+Gain", "-Lost", "Ovt", "FL", "DOTD", "Total"]
-        col_widths = [20, 6, 6, 6, 6, 6, 4, 4, 6, 6] if has_sprint else [20, 6, 6, 6, 6, 4, 4, 6, 6]
-        header = "  " + "".join(c.ljust(w) for c, w in zip(cols, col_widths))
-        logger.info("  %s", header)
-        logger.info("  %s", "-" * (sum(col_widths) + 2))
-        for driver_num, pts in sorted(pts_to_log.items(), key=lambda x: -x[1]):
-            b = driver_breakdowns.get(driver_num, {})
-            name = driver_info.get(driver_num, {}).get("name", f"Driver {driver_num}")
-            short_name = (name[:17] + "..") if len(name) > 19 else name
-            if has_sprint:
-                row = (
-                    f"  {short_name.ljust(20)}"
-                    f"{b.get('qualy', 0):>5.0f} "
-                    f"{b.get('sprint', 0):>5.0f} "
-                    f"{b.get('race_pos', 0):>5.0f} "
-                    f"{b.get('race_gained', 0):>5.0f} "
-                    f"{b.get('race_lost', 0):>5.0f} "
-                    f"{b.get('race_overtakes', 0):>3.0f} "
-                    f"{b.get('race_fl', 0):>3.0f} "
-                    f"{b.get('race_dotd', 0):>5.0f} "
-                    f"{b.get('total', pts):>5.0f}"
-                )
-            else:
-                row = (
-                    f"  {short_name.ljust(20)}"
-                    f"{b.get('qualy', 0):>5.0f} "
-                    f"{b.get('race_pos', 0):>5.0f} "
-                    f"{b.get('race_gained', 0):>5.0f} "
-                    f"{b.get('race_lost', 0):>5.0f} "
-                    f"{b.get('race_overtakes', 0):>3.0f} "
-                    f"{b.get('race_fl', 0):>3.0f} "
-                    f"{b.get('race_dotd', 0):>5.0f} "
-                    f"{b.get('total', pts):>5.0f}"
-                )
-            logger.info("%s", row)
-        logger.info("")
-        logger.info("  Constructors:")
-        for tid, pts in sorted(const_pts_to_log.items(), key=lambda x: -x[1]):
-            name = team_id_to_name.get(tid, tid.replace("_", " ").title())
-            logger.info("    %s: %.0f pts", name, pts)
-        logger.info("")
+    # Log driver breakdown table (always show; helps verify vs f1fantasytools.com)
+    pts_to_log = fantasy_driver_pts if fantasy_driver_pts else computed_driver_points
+    const_pts_to_log = fantasy_const_pts if fantasy_const_pts else computed_constructor_points
+    team_id_to_name = {info.get("team_id", ""): info.get("team_name", "") for info in driver_info.values()}
+
+    # Use fantasy-data breakdown when available (has sprint info from 2025 dir, etc.)
+    fantasy_breakdown_result = None
+    if fantasy_driver_pts and data_dir:
+        fantasy_breakdown_result = get_driver_breakdown_from_fantasy_data(
+            driver_info, round_num, data_dir=data_dir
+        )
+    driver_breakdowns_to_show = driver_breakdowns
+    has_sprint = sprint_positions is not None and len(sprint_positions) > 0
+    if fantasy_breakdown_result:
+        driver_breakdowns_to_show, has_sprint = fantasy_breakdown_result
+
+    logger.info("")
+    logger.info("  Points from %d Round %d:", data_season, data_round)
+    if not fantasy_driver_pts and not overtakes_race:
+        logger.info("  (Computed points are lower than f1fantasytools.com: no overtake data available)")
+    if fantasy_driver_pts and fantasy_breakdown_result:
+        logger.info("  (Breakdown from fantasy-data)")
+    elif fantasy_driver_pts:
+        logger.info("  (Breakdown from API; optimizer uses fantasy totals)")
+    # Driver points breakdown table (include Sprint breakdown when round has sprint)
+    if has_sprint:
+        cols = ["Driver", "Qualy", "Sprint", "S+G", "S-L", "SOvt", "SFL", "Race", "+Gain", "-Lost", "Ovt", "FL", "DOTD", "Total"]
+        col_widths = [20, 5, 5, 4, 4, 4, 3, 5, 5, 5, 3, 3, 5, 5]
+    else:
+        cols = ["Driver", "Qualy", "Race", "+Gain", "-Lost", "Ovt", "FL", "DOTD", "Total"]
+        col_widths = [20, 6, 6, 6, 6, 4, 4, 6, 6]
+    header = "  " + "".join(c.ljust(w) for c, w in zip(cols, col_widths))
+    logger.info("  %s", header)
+    logger.info("  %s", "-" * (sum(col_widths) + 2))
+    for driver_num, pts in sorted(pts_to_log.items(), key=lambda x: -x[1]):
+        b = driver_breakdowns_to_show.get(driver_num, {})
+        name = driver_info.get(driver_num, {}).get("name", f"Driver {driver_num}")
+        short_name = (name[:17] + "..") if len(name) > 19 else name
+        if has_sprint:
+            row = (
+                f"  {short_name.ljust(20)}"
+                f"{b.get('qualy', 0):>4.0f} "
+                f"{b.get('sprint_pos', 0):>4.0f} "
+                f"{b.get('sprint_gained', 0):>3.0f} "
+                f"{b.get('sprint_lost', 0):>3.0f} "
+                f"{b.get('sprint_overtakes', 0):>3.0f} "
+                f"{b.get('sprint_fl', 0):>2.0f} "
+                f"{b.get('race_pos', 0):>4.0f} "
+                f"{b.get('race_gained', 0):>4.0f} "
+                f"{b.get('race_lost', 0):>4.0f} "
+                f"{b.get('race_overtakes', 0):>2.0f} "
+                f"{b.get('race_fl', 0):>2.0f} "
+                f"{b.get('race_dotd', 0):>4.0f} "
+                f"{b.get('total', pts):>4.0f}"
+            )
+        else:
+            row = (
+                f"  {short_name.ljust(20)}"
+                f"{b.get('qualy', 0):>5.0f} "
+                f"{b.get('race_pos', 0):>5.0f} "
+                f"{b.get('race_gained', 0):>5.0f} "
+                f"{b.get('race_lost', 0):>5.0f} "
+                f"{b.get('race_overtakes', 0):>3.0f} "
+                f"{b.get('race_fl', 0):>3.0f} "
+                f"{b.get('race_dotd', 0):>5.0f} "
+                f"{b.get('total', pts):>5.0f}"
+            )
+        logger.info("%s", row)
+    logger.info("")
+    logger.info("  Constructors:")
+    for tid, pts in sorted(const_pts_to_log.items(), key=lambda x: -x[1]):
+        name = team_id_to_name.get(tid, tid.replace("_", " ").title())
+        logger.info("    %s: %.0f pts", name, pts)
+    logger.info("")
 
     # 6. Load prices and build optimizer lists
     fallback = load_fallback_prices()
@@ -469,9 +522,9 @@ def main():
         )
         return 1
 
-    # 7. Run optimizer
+    # 7. Run optimizer (includes Boost / Mega Driver: one driver gets 2x points)
     logger.info("\nFinding optimal team (5 drivers + 2 constructors, $100M cap)...")
-    best_drivers, best_constructors, total_points = find_optimal_team(
+    best_drivers, best_constructors, total_points, boosted_driver = find_optimal_team(
         unique_drivers, constructors_for_optimizer
     )
 
@@ -482,7 +535,8 @@ def main():
     logger.info("\nDrivers:")
     driver_cost = 0
     for d in best_drivers:
-        logger.info("  %s - $%.1fM - %.0f pts", d.name, d.price, d.points)
+        boost_tag = " [BOOST]" if boosted_driver and d.name == boosted_driver.name else ""
+        logger.info("  %s - $%.1fM - %.0f pts%s", d.name, d.price, d.points, boost_tag)
         driver_cost += d.price
     logger.info("\nConstructors:")
     const_cost = 0

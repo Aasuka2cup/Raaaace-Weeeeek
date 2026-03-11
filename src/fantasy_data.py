@@ -12,6 +12,7 @@ from typing import Optional
 
 import requests
 
+
 logger = logging.getLogger(__name__)
 
 FANTASY_DATA_BASE = "https://raw.githubusercontent.com/JoshCBruce/fantasy-data/main/latest"
@@ -268,6 +269,96 @@ def get_driver_points_from_fantasy_data(
             return None
 
     return result
+
+
+def get_driver_breakdown_from_fantasy_data(
+    driver_info: dict[int, dict],
+    round_num: int,
+    data_dir: Optional[Path] = None,
+) -> Optional[tuple[dict[int, dict], bool]]:
+    """
+    Fetch driver points breakdown from fantasy-data for the table.
+    Returns (driver_breakdowns, has_sprint) or None.
+    driver_breakdowns: driver_num -> {qualy, sprint, race_pos, race_gained, race_lost, race_overtakes, race_fl, race_dotd, total}
+    """
+    if not data_dir:
+        return None
+    round_str = str(round_num)
+    abbrevs = _list_driver_files(data_dir)
+    abbrev_to_breakdown: dict[str, dict] = {}
+    has_sprint = False
+
+    for abbrev in abbrevs:
+        data = _load_driver_data(abbrev, data_dir)
+        if not data:
+            continue
+        for race in data.get("races", []):
+            if race.get("round") != round_str:
+                continue
+            qualy = race.get("qualifying", {})
+            race_obj = race.get("race", {})
+            sprint_obj = race.get("sprint")
+            if sprint_obj is not None:
+                has_sprint = True
+
+            # Fantasy-data stores POINTS directly (from scraper), not raw positions/counts
+            qualy_pts = float(qualy.get("position", 0) or 0)
+            dq_penalty = float(qualy.get("disqualificationPenalty", 0) or 0)
+            qualy_pts += dq_penalty
+
+            sprint_pts = 0.0
+            sprint_pos_pts = sprint_gained_pts = sprint_lost_pts = sprint_ovt_pts = sprint_fl_pts = 0.0
+            if sprint_obj is not None:
+                sprint_pos_pts = float(sprint_obj.get("position", 0) or 0)
+                sprint_gained_pts = float(sprint_obj.get("positionsGained", 0) or 0)
+                sprint_lost_pts = float(sprint_obj.get("positionsLost", 0) or 0)
+                sprint_ovt_pts = float(sprint_obj.get("overtakeBonus", 0) or 0)
+                sprint_fl_pts = float(sprint_obj.get("fastestLap", 0) or 0)
+                dq_penalty = float(sprint_obj.get("disqualificationPenalty", 0) or 0)
+                sprint_pts = sprint_pos_pts + sprint_gained_pts + sprint_lost_pts + sprint_ovt_pts + sprint_fl_pts + dq_penalty
+
+            race_pos_pts = float(race_obj.get("position", 0) or 0)
+            race_gained_pts = float(race_obj.get("positionsGained", 0) or 0)
+            race_lost_pts = float(race_obj.get("positionsLost", 0) or 0)
+            race_ovt_pts = float(race_obj.get("overtakeBonus", 0) or 0)
+            race_fl_pts = float(race_obj.get("fastestLap", 0) or 0)
+            race_dotd_pts = float(race_obj.get("dotd", 0) or 0)
+            dq_penalty = float(race_obj.get("disqualificationPenalty", 0) or 0)
+            race_pos_pts += dq_penalty
+
+            total = qualy_pts + sprint_pts + race_pos_pts + race_gained_pts + race_lost_pts + race_ovt_pts + race_fl_pts + race_dotd_pts
+            # Use totalPoints from fantasy-data when available (authoritative)
+            race_total_pts = race.get("totalPoints")
+            if race_total_pts is not None:
+                total = float(race_total_pts)
+            abbrev_to_breakdown[abbrev] = {
+                "qualy": qualy_pts,
+                "sprint": sprint_pts,
+                "sprint_pos": sprint_pos_pts,
+                "sprint_gained": sprint_gained_pts,
+                "sprint_lost": sprint_lost_pts,
+                "sprint_overtakes": sprint_ovt_pts,
+                "sprint_fl": sprint_fl_pts,
+                "race_pos": race_pos_pts,
+                "race_gained": race_gained_pts,
+                "race_lost": race_lost_pts,
+                "race_overtakes": race_ovt_pts,
+                "race_fl": race_fl_pts,
+                "race_dotd": race_dotd_pts,
+                "total": total,
+            }
+            break
+
+    if not abbrev_to_breakdown:
+        return None
+
+    result: dict[int, dict] = {}
+    for driver_num, info in driver_info.items():
+        abbrev = _get_abbrev_from_name(info.get("name", ""))
+        if abbrev and abbrev in abbrev_to_breakdown:
+            result[driver_num] = abbrev_to_breakdown[abbrev]
+
+    return (result, has_sprint) if result else None
 
 
 def get_constructor_points_from_fantasy_data(

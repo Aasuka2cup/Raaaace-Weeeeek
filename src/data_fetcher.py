@@ -96,7 +96,9 @@ def fetch_f1api_sprint_race(year: int, round_num: int) -> Optional[dict]:
         resp = requests.get(url, timeout=15)
         resp.raise_for_status()
         data = resp.json()
-        if data.get("races", {}).get("sprintResults"):
+        races = data.get("races", {})
+        # f1api uses sprintRaceResults; some APIs use sprintResults or results
+        if races.get("sprintRaceResults") or races.get("sprintResults"):
             return data
         return None
     except requests.RequestException:
