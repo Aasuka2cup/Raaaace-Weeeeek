@@ -1,0 +1,34 @@
+{
+  "1": {
+    "raceName": "Australia",
+    "constructors": {
+      "MER": 96,
+      "FER": 69,
+      "RBR": 42,
+      "RB": 35,
+      "HAA": 34,
+      "ALP": 22,
+      "WIL": 20,
+      "MCL": 19,
+      "AUD": 0,
+      "CAD": -13,
+      "AMR": -38
+    }
+  },
+  "2": {
+    "raceName": "China",
+    "constructors": {
+      "MER": 0,
+      "FER": 0,
+      "RBR": 0,
+      "RB": 0,
+      "HAA": 0,
+      "ALP": 0,
+      "WIL": 0,
+      "MCL": 0,
+      "AUD": 0,
+      "CAD": 0,
+      "AMR": 0
+    }
+  }
+}

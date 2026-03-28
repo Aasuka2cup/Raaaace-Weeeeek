@@ -1,0 +1,199 @@
+{
+  "rank": 5,
+  "teamName": "prolific1",
+  "manager": "Max Ult",
+  "totalResponses": 2,
+  "responses": [
+    {
+      "url": "https://fantasy.formula1.com/services/user/opponentteam/opponentgamedayget/1/e472410c-1355-11f1-9e4d-1b466a0d4f5e-0-217737144/1?buster=1774673130948",
+      "status": 200,
+      "payload": {
+        "Data": {
+          "Value": {
+            "ftMdid": 1,
+            "ftGdid": 1,
+            "CuGdid": 6,
+            "mdDetails": {
+              "1": {
+                "mds": 3,
+                "phId": 1,
+                "pts": 211
+              },
+              "2": {
+                "mds": 3,
+                "phId": 1,
+                "pts": 402
+              }
+            },
+            "teamCount": 3,
+            "lastDaygdid": 0,
+            "isLastday": 0,
+            "isWildcardtaken": 0,
+            "wildCardtakengd": 0,
+            "isLimitlesstaken": 0,
+            "limitLesstakengd": 0,
+            "isFinalfixtaken": 0,
+            "finalFixtakengd": 0,
+            "isExtradrstaken": 0,
+            "extraDrstakengd": 0,
+            "isNonigativetaken": 0,
+            "noNigativetakengd": 0,
+            "isAutopilottaken": 4,
+            "isAutopilottakengd": 1,
+            "islateonboard": 0
+          },
+          "FeedTime": {
+            "UTCTime": "3/28/2026 4:45:37 AM",
+            "ISTTime": "3/28/2026 10:15:37 AM",
+            "CESTTime": "3/28/2026 5:45:37 AM"
+          }
+        },
+        "Meta": {
+          "Message": "cf_user_opponent_gameday_get",
+          "RetVal": 1,
+          "Success": true,
+          "Timestamp": {
+            "UTCTime": "3/28/2026 4:45:37 AM",
+            "ISTTime": "3/28/2026 10:15:37 AM",
+            "CESTTime": "3/28/2026 5:45:37 AM"
+          },
+          "StatusCode": 200,
+          "Maintenance": ""
+        }
+      }
+    },
+    {
+      "url": "https://fantasy.formula1.com/services/user/opponentteam/opponentgamedayplayerteamget/1/e472410c-1355-11f1-9e4d-1b466a0d4f5e-0-217737144/1/2/1?buster=1774673130948",
+      "status": 200,
+      "payload": {
+        "Data": {
+          "Value": {
+            "mdid": 2,
+            "userTeam": [
+              {
+                "gdrank": 130841,
+                "ovrank": 129421,
+                "teamno": 1,
+                "teambal": 2.9,
+                "gdpoints": 402,
+                "matchday": 1,
+                "ovpoints": 613,
+                "playerid": [
+                  {
+                    "id": "26",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 7
+                  },
+                  {
+                    "id": "11031",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 3
+                  },
+                  {
+                    "id": "111",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 4
+                  },
+                  {
+                    "id": "115",
+                    "isfinal": 0,
+                    "iscaptain": 1,
+                    "ismgcaptain": 0,
+                    "playerpostion": 1
+                  },
+                  {
+                    "id": "11161",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 2
+                  },
+                  {
+                    "id": "25",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 6
+                  },
+                  {
+                    "id": "11149",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 5
+                  }
+                ],
+                "socialId": 217737144,
+                "teamname": "prolific1",
+                "usersubs": 0,
+                "boosterid": null,
+                "team_info": {
+                  "teamBal": 2.9,
+                  "teamVal": 99.2,
+                  "maxTeambal": 102.1,
+                  "subsallowed": 2,
+                  "userSubsleft": 2
+                },
+                "fttourgdid": 1,
+                "fttourmdid": 1,
+                "iswildcard": null,
+                "capplayerid": "115",
+                "subsallowed": 0,
+                "isaccounting": 1,
+                "usersubsleft": 0,
+                "extrasubscost": 10,
+                "islateonboard": 0,
+                "mgcapplayerid": null,
+                "race_category": null,
+                "finalfxracecat": null,
+                "finalfxraceday": null,
+                "isboostertaken": null,
+                "extradrstakengd": null,
+                "finalfixtakengd": null,
+                "isextradrstaken": 0,
+                "isfinalfixtaken": 0,
+                "iswildcardtaken": 0,
+                "wildcardtakengd": 0,
+                "autopilottakengd": 1,
+                "isautopilottaken": 4,
+                "islimitlesstaken": 0,
+                "limitlesstakengd": null,
+                "isnonigativetaken": 0,
+                "nonigativetakengd": null,
+                "finalfxnewplayerid": null,
+                "finalfxoldplayerid": null,
+                "player_swap_details": null,
+                "is_wildcard_taken_gd_id": null,
+                "inactive_driver_penality_points": 0
+              }
+            ],
+            "retval": 1
+          },
+          "FeedTime": {
+            "UTCTime": "3/28/2026 4:45:37 AM",
+            "ISTTime": "3/28/2026 10:15:37 AM",
+            "CESTTime": "3/28/2026 5:45:37 AM"
+          }
+        },
+        "Meta": {
+          "Message": "cf_user_team_gameday_player_opponent_get",
+          "RetVal": 1,
+          "Success": true,
+          "Timestamp": {
+            "UTCTime": "3/28/2026 4:45:37 AM",
+            "ISTTime": "3/28/2026 10:15:37 AM",
+            "CESTTime": "3/28/2026 5:45:37 AM"
+          },
+          "StatusCode": 200,
+          "Maintenance": ""
+        }
+      }
+    }
+  ]
+}

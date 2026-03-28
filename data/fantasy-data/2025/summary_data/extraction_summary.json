@@ -1,0 +1,361 @@
+{
+  "extractedAt": "2025-11-19T13:41:49.267Z",
+  "totalDrivers": 21,
+  "totalConstructors": 10,
+  "teamSwapDrivers": 2,
+  "totalRaces": 450,
+  "averagePercentagePicked": 23,
+  "averageConstructorPercentagePicked": 20,
+  "drivers": [
+    {
+      "abbreviation": "NOR",
+      "name": "landonorris",
+      "team": "McLaren",
+      "position": 1,
+      "value": "30.5M",
+      "seasonTotal": 663,
+      "percentagePicked": 23,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "VER",
+      "name": "maxverstappen",
+      "team": "Red Bull Racing",
+      "position": 2,
+      "value": "29.5M",
+      "seasonTotal": 619,
+      "percentagePicked": 20,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "PIA",
+      "name": "oscarpiastri",
+      "team": "McLaren",
+      "position": 3,
+      "value": "25.7M",
+      "seasonTotal": 584,
+      "percentagePicked": 36,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "RUS",
+      "name": "georgerussell",
+      "team": "Mercedes",
+      "position": 4,
+      "value": "23.5M",
+      "seasonTotal": 508,
+      "percentagePicked": 12,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "LEC",
+      "name": "charlesleclerc",
+      "team": "Ferrari",
+      "position": 5,
+      "value": "23.4M",
+      "seasonTotal": 344,
+      "percentagePicked": 14,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "HAM",
+      "name": "lewishamilton",
+      "team": "Ferrari",
+      "position": 6,
+      "value": "22.5M",
+      "seasonTotal": 335,
+      "percentagePicked": 11,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "ANT",
+      "name": "kimiantonelli",
+      "team": "Mercedes",
+      "position": 7,
+      "value": "16.9M",
+      "seasonTotal": 251,
+      "percentagePicked": 20,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "BEA",
+      "name": "oliverbearman",
+      "team": "Haas",
+      "position": 8,
+      "value": "8.9M",
+      "seasonTotal": 207,
+      "percentagePicked": 42,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "ALB",
+      "name": "alexanderalbon",
+      "team": "Williams",
+      "position": 9,
+      "value": "13.8M",
+      "seasonTotal": 200,
+      "percentagePicked": 28,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "TSU",
+      "name": "yukitsunoda",
+      "team": "Red Bull Racing",
+      "position": 10,
+      "value": "11.4M",
+      "seasonTotal": 161,
+      "percentagePicked": 6,
+      "racesFound": 19,
+      "teamSwap": true,
+      "teams": [
+        "Red Bull Racing",
+        "Racing Bulls"
+      ]
+    },
+    {
+      "abbreviation": "STR",
+      "name": "lancestroll",
+      "team": "Aston Martin",
+      "position": 11,
+      "value": "7.9M",
+      "seasonTotal": 144,
+      "percentagePicked": 10,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "OCO",
+      "name": "estebanocon",
+      "team": "Haas",
+      "position": 12,
+      "value": "6.7M",
+      "seasonTotal": 141,
+      "percentagePicked": 22,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "HUL",
+      "name": "nicohulkenberg",
+      "team": "Kick Sauber",
+      "position": 13,
+      "value": "6.2M",
+      "seasonTotal": 130,
+      "percentagePicked": 32,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "HAD",
+      "name": "isackhadjar",
+      "team": "Racing Bulls",
+      "position": 14,
+      "value": "5.7M",
+      "seasonTotal": 96,
+      "percentagePicked": 55,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "SAI",
+      "name": "carlossainz",
+      "team": "Williams",
+      "position": 15,
+      "value": "6.5M",
+      "seasonTotal": 84,
+      "percentagePicked": 43,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "GAS",
+      "name": "pierregasly",
+      "team": "Alpine",
+      "position": 16,
+      "value": "5.3M",
+      "seasonTotal": 54,
+      "percentagePicked": 20,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "BOR",
+      "name": "gabrielbortoleto",
+      "team": "Kick Sauber",
+      "position": 17,
+      "value": "6.7M",
+      "seasonTotal": 53,
+      "percentagePicked": 26,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "LAW",
+      "name": "liamlawson",
+      "team": "Racing Bulls",
+      "position": 18,
+      "value": "5.9M",
+      "seasonTotal": 53,
+      "percentagePicked": 12,
+      "racesFound": 19,
+      "teamSwap": true,
+      "teams": [
+        "Racing Bulls",
+        "Red Bull Racing"
+      ]
+    },
+    {
+      "abbreviation": "ALO",
+      "name": "fernandoalonso",
+      "team": "Aston Martin",
+      "position": 19,
+      "value": "4.9M",
+      "seasonTotal": 27,
+      "percentagePicked": 37,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "COL",
+      "name": "francocolapinto",
+      "team": "Alpine",
+      "position": 22,
+      "value": "4.5M",
+      "seasonTotal": 2,
+      "percentagePicked": 10,
+      "racesFound": 16,
+      "teamSwap": false,
+      "teams": []
+    },
+    {
+      "abbreviation": "DOO",
+      "name": "jackdoohan",
+      "team": "Alpine",
+      "position": 23,
+      "value": "4.5M",
+      "seasonTotal": 0,
+      "percentagePicked": 8,
+      "racesFound": 22,
+      "teamSwap": false,
+      "teams": []
+    }
+  ],
+  "constructors": [
+    {
+      "abbreviation": "MCL",
+      "name": "mclaren",
+      "position": 1,
+      "value": "35.9M",
+      "seasonTotal": 1605,
+      "percentagePicked": 39,
+      "racesFound": 22
+    },
+    {
+      "abbreviation": "RBR",
+      "name": "red bullracing",
+      "position": 2,
+      "value": "30.5M",
+      "seasonTotal": 1023,
+      "percentagePicked": 11,
+      "racesFound": 22
+    },
+    {
+      "abbreviation": "MER",
+      "name": "mercedes",
+      "position": 3,
+      "value": "27.8M",
+      "seasonTotal": 1016,
+      "percentagePicked": 19,
+      "racesFound": 22
+    },
+    {
+      "abbreviation": "FER",
+      "name": "ferrari",
+      "position": 4,
+      "value": "31.8M",
+      "seasonTotal": 992,
+      "percentagePicked": 19,
+      "racesFound": 22
+    },
+    {
+      "abbreviation": "HAS",
+      "name": "haas",
+      "position": 5,
+      "value": "14.4M",
+      "seasonTotal": 429,
+      "percentagePicked": 18,
+      "racesFound": 22
+    },
+    {
+      "abbreviation": "WIL",
+      "name": "williams",
+      "position": 6,
+      "value": "18.9M",
+      "seasonTotal": 418,
+      "percentagePicked": 25,
+      "racesFound": 22
+    },
+    {
+      "abbreviation": "RB",
+      "name": "racingbulls",
+      "position": 7,
+      "value": "15M",
+      "seasonTotal": 404,
+      "percentagePicked": 27,
+      "racesFound": 22
+    },
+    {
+      "abbreviation": "AMR",
+      "name": "astonmartin",
+      "position": 8,
+      "value": "11.1M",
+      "seasonTotal": 284,
+      "percentagePicked": 16,
+      "racesFound": 22
+    },
+    {
+      "abbreviation": "SAU",
+      "name": "kicksauber",
+      "position": 9,
+      "value": "9.9M",
+      "seasonTotal": 271,
+      "percentagePicked": 15,
+      "racesFound": 22
+    },
+    {
+      "abbreviation": "ALP",
+      "name": "alpine",
+      "position": 10,
+      "value": "9.7M",
+      "seasonTotal": 144,
+      "percentagePicked": 11,
+      "racesFound": 22
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "driverId": "lewishamiltondriver",
+  "name": "lewishamiltondriver",
+  "displayName": "lewishamilton",
+  "abbreviation": "HAM",
+  "team": "Ferrari",
+  "position": 5,
+  "value": "22.6M",
+  "seasonTotalPoints": 25,
+  "percentagePicked": 15,
+  "isInactive": false,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 25,
+      "race": {
+        "dotd": 0,
+        "position": 12,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 6,
+        "positionsGained": 3,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 4,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 0,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      }
+    }
+  ],
+  "extractedAt": "2026-03-11T05:18:02.107Z"
+}

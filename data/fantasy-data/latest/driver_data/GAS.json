@@ -1,0 +1,62 @@
+{
+  "driverId": "pierregaslydriver",
+  "name": "pierregaslydriver",
+  "displayName": "pierregasly",
+  "abbreviation": "GAS",
+  "team": "Alpine",
+  "position": 10,
+  "value": "12.2M",
+  "seasonTotalPoints": 11,
+  "percentagePicked": 13,
+  "isInactive": false,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 11,
+      "race": {
+        "dotd": 0,
+        "position": 1,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 6,
+        "positionsGained": 4,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 0,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      }
+    }
+  ],
+  "extractedAt": "2026-03-11T05:18:32.793Z"
+}

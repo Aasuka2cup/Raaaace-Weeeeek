@@ -1,0 +1,3807 @@
+{
+  "leagueUrl": "https://fantasy.formula1.com/en/leagues/leaderboard/public/871710",
+  "targetRace": null,
+  "scrapedAt": "2026-03-27T23:54:32.766Z",
+  "teams": [
+    {
+      "rank": 1,
+      "teamName": "Kerbau Racing F1 Team",
+      "manager": "Minzer Teo",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Charles Leclerc",
+          "Lewis Hamilton",
+          "Kimi Antonelli",
+          "Lando Norris"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 481,
+      "costCap": "$0.0M",
+      "limitless": true,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lando Norris",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 481,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lando Norris",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "teamName": "cadillacLast",
+      "manager": "Atanas Belomorov",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "George Russell",
+          "Gabriel Bortoleto",
+          "Sergio Pérez",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Cadillac",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 419,
+      "costCap": "$0.4M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Cadillac",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 419,
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Cadillac",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "teamName": "Girone GXE-26B",
+      "manager": "Pato Busti",
+      "lineup": {
+        "drivers": [
+          "Lewis Hamilton",
+          "Gabriel Bortoleto",
+          "Arvid Lindblad",
+          "Franco Colapinto",
+          "Sergio Pérez"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 361,
+      "costCap": "$0.1M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 361,
+        "drivers": [
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "teamName": "prolific1",
+      "manager": "Max Ult",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Kimi Antonelli",
+          "Oliver Bearman",
+          "Nico Hülkenberg",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Haas"
+        ]
+      },
+      "totalPoints": 402,
+      "costCap": "$2.9M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 402,
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 5,
+      "teamName": "THEMOSTPOINTSPOSSIBLE",
+      "manager": "Minzer Teo",
+      "lineup": {
+        "drivers": [
+          "Lewis Hamilton",
+          "Kimi Antonelli",
+          "Oscar Piastri",
+          "Oliver Bearman",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Racing Bulls",
+          "Haas"
+        ]
+      },
+      "totalPoints": 429,
+      "costCap": "$0.1M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oscar Piastri",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Racing Bulls",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 429,
+        "drivers": [
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oscar Piastri",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Racing Bulls",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 6,
+      "teamName": "Team Ferrari 2026",
+      "manager": "Atanas Belomorov",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Esteban Ocon",
+          "Gabriel Bortoleto",
+          "Kimi Antonelli",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Haas"
+        ]
+      },
+      "totalPoints": 371,
+      "costCap": "$1.0M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 371,
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 7,
+      "teamName": "Can't Stop The Russell",
+      "manager": "Matt McCracken",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Sergio Pérez",
+          "Franco Colapinto",
+          "Liam Lawson",
+          "Esteban Ocon"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 367,
+      "costCap": "$9.9M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Liam Lawson",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 367,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Liam Lawson",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 8,
+      "teamName": "Toto Recall 2",
+      "manager": "Matt McCracken",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Gabriel Bortoleto",
+          "Sergio Pérez",
+          "Arvid Lindblad",
+          "Valtteri Bottas"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 352,
+      "costCap": "$0.1M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 352,
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 9,
+      "teamName": "prolific3",
+      "manager": "Max Ult",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "George Russell",
+          "Lewis Hamilton",
+          "Oliver Bearman",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Haas",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 351,
+      "costCap": "$0.0M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Haas",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 351,
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Haas",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 10,
+      "teamName": "Jack hung",
+      "manager": "Hung Jack",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Oliver Bearman",
+          "Liam Lawson",
+          "Isack Hadjar",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 334,
+      "costCap": "$1.4M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Liam Lawson",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 334,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Liam Lawson",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 11,
+      "teamName": "Le Clerc's Tale",
+      "manager": "Matt McCracken",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Oliver Bearman",
+          "Liam Lawson",
+          "Valtteri Bottas",
+          "Franco Colapinto"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 372,
+      "costCap": "$14.5M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Liam Lawson",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 372,
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Liam Lawson",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 12,
+      "teamName": "luka lululu",
+      "manager": "Hung Jack",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Esteban Ocon",
+          "Oliver Bearman",
+          "Pierre Gasly",
+          "Nico Hülkenberg"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 355,
+      "costCap": "$1.6M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 355,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 13,
+      "teamName": "prolific2",
+      "manager": "Max Ult",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Isack Hadjar",
+          "Oliver Bearman",
+          "Esteban Ocon",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 318,
+      "costCap": "$0.8M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 318,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 14,
+      "teamName": "VvvvvvD",
+      "manager": "Vivian Dai",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Isack Hadjar",
+          "Arvid Lindblad",
+          "Nico Hülkenberg",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 337,
+      "costCap": "$0.4M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 337,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 15,
+      "teamName": "Girone GXE-26A",
+      "manager": "Pato Busti",
+      "lineup": {
+        "drivers": [
+          "Kimi Antonelli",
+          "Charles Leclerc",
+          "Nico Hülkenberg",
+          "Oliver Bearman",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Haas"
+        ]
+      },
+      "totalPoints": 398,
+      "costCap": "$0.9M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 398,
+        "drivers": [
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 16,
+      "teamName": "Girone GXE-26C",
+      "manager": "Pato Busti",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Kimi Antonelli",
+          "Isack Hadjar",
+          "Pierre Gasly",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Haas",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 346,
+      "costCap": "$1.0M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Haas",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 346,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Haas",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 17,
+      "teamName": "Underrated Monstaz",
+      "manager": "Var too cool",
+      "lineup": {
+        "drivers": [
+          "Lewis Hamilton",
+          "Pierre Gasly",
+          "Isack Hadjar",
+          "Oliver Bearman",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 320,
+      "costCap": "$1.4M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 320,
+        "drivers": [
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 18,
+      "teamName": "Midfield Monstaz",
+      "manager": "Var too cool",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Pierre Gasly",
+          "Fernando Alonso",
+          "Isack Hadjar",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Haas"
+        ]
+      },
+      "totalPoints": 352,
+      "costCap": "$1.5M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Fernando Alonso",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 352,
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Fernando Alonso",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 19,
+      "teamName": "DuDuDuDuMaxVers",
+      "manager": "Atanas Belomorov",
+      "lineup": {
+        "drivers": [
+          "Oliver Bearman",
+          "Max Verstappen",
+          "Franco Colapinto",
+          "Esteban Ocon",
+          "Pierre Gasly"
+        ],
+        "constructors": [
+          "Red Bull",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 267,
+      "costCap": "$2.9M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Max Verstappen",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Red Bull",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 267,
+        "drivers": [
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Max Verstappen",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Red Bull",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 20,
+      "teamName": "Li Xiang Racing",
+      "manager": "Yuzhao Wang",
+      "lineup": {
+        "drivers": [
+          "Kimi Antonelli",
+          "Charles Leclerc",
+          "Esteban Ocon",
+          "Oliver Bearman",
+          "Valtteri Bottas"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Haas"
+        ]
+      },
+      "totalPoints": 432,
+      "costCap": "$0.6M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 432,
+        "drivers": [
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 21,
+      "teamName": "VarsMonstaz",
+      "manager": "Var too cool",
+      "lineup": {
+        "drivers": [
+          "Max Verstappen",
+          "Pierre Gasly",
+          "Arvid Lindblad",
+          "Isack Hadjar",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 267,
+      "costCap": "$0.8M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Max Verstappen",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 267,
+        "drivers": [
+          {
+            "name": "Max Verstappen",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 22,
+      "teamName": "Damian Hill Superstar",
+      "manager": "Shaun Carroll",
+      "lineup": {
+        "drivers": [
+          "Kimi Antonelli",
+          "Oliver Bearman",
+          "Isack Hadjar",
+          "Franco Colapinto",
+          "Carlos Sainz"
+        ],
+        "constructors": [
+          "McLaren",
+          "Haas"
+        ]
+      },
+      "totalPoints": 293,
+      "costCap": "$0.0M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Carlos Sainz",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "McLaren",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 293,
+        "drivers": [
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Carlos Sainz",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "McLaren",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 23,
+      "teamName": "Bro Where Is My F1 Car",
+      "manager": "Shaun Carroll",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Gabriel Bortoleto",
+          "Nico Hülkenberg",
+          "Carlos Sainz",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Audi"
+        ]
+      },
+      "totalPoints": 229,
+      "costCap": "$4.7M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Carlos Sainz",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Audi",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 229,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Carlos Sainz",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Audi",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 25,
+      "teamName": "testing testing1",
+      "manager": "Judy Naka",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "George Russell",
+          "Arvid Lindblad",
+          "Oliver Bearman",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Racing Bulls",
+          "Haas"
+        ]
+      },
+      "totalPoints": 379,
+      "costCap": "$12.5M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Racing Bulls",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 379,
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Racing Bulls",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 26,
+      "teamName": "T1",
+      "manager": "Aasuka Martini F1",
+      "lineup": {
+        "drivers": [
+          "Lewis Hamilton",
+          "Oliver Bearman",
+          "Kimi Antonelli",
+          "Gabriel Bortoleto",
+          "Franco Colapinto"
+        ],
+        "constructors": [
+          "Racing Bulls",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 371,
+      "costCap": "$2.0M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Racing Bulls",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 371,
+        "drivers": [
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Racing Bulls",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 27,
+      "teamName": "Xiao MI",
+      "manager": "Yuzhao Wang",
+      "lineup": {
+        "drivers": [
+          "Lewis Hamilton",
+          "Sergio Pérez",
+          "Arvid Lindblad",
+          "Nico Hülkenberg",
+          "Valtteri Bottas"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 367,
+      "costCap": "$0.1M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 367,
+        "drivers": [
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 28,
+      "teamName": "MJJ123",
+      "manager": "Miao JunJi",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Lewis Hamilton",
+          "Liam Lawson",
+          "Valtteri Bottas",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Racing Bulls",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 352,
+      "costCap": "$0.8M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Liam Lawson",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Racing Bulls",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 352,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Liam Lawson",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Racing Bulls",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 29,
+      "teamName": "Jimmy Clark F1",
+      "manager": "Shaun Carroll",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Gabriel Bortoleto",
+          "Sergio Pérez",
+          "Nico Hülkenberg",
+          "Isack Hadjar"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Alpine"
+        ]
+      },
+      "totalPoints": 298,
+      "costCap": "$6.5M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Alpine",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 298,
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Alpine",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 30,
+      "teamName": "big Smiling",
+      "manager": "Judy Naka",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Oscar Piastri",
+          "Arvid Lindblad",
+          "Gabriel Bortoleto",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Haas",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 225,
+      "costCap": "$12.2M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oscar Piastri",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Haas",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 225,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oscar Piastri",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Haas",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 31,
+      "teamName": "rokieracing",
+      "manager": "felipe vela",
+      "lineup": {
+        "drivers": [
+          "Franco Colapinto",
+          "Esteban Ocon",
+          "Arvid Lindblad",
+          "Gabriel Bortoleto",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Mercedes"
+        ]
+      },
+      "totalPoints": 321,
+      "costCap": "$10.7M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Mercedes",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 321,
+        "drivers": [
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Mercedes",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 32,
+      "teamName": "T2",
+      "manager": "Roookies Racing",
+      "lineup": {
+        "drivers": [
+          "Isack Hadjar",
+          "Franco Colapinto",
+          "Gabriel Bortoleto",
+          "Arvid Lindblad",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 317,
+      "costCap": "$4.1M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 317,
+        "drivers": [
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 32,
+      "teamName": "Yahhhhh",
+      "manager": "mou jin wei",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Oliver Bearman",
+          "Gabriel Bortoleto",
+          "Nico Hülkenberg",
+          "Pierre Gasly"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 317,
+      "costCap": "$1.3M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 317,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 34,
+      "teamName": "T3",
+      "manager": "Expensive is better",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Nico Hülkenberg",
+          "Oliver Bearman",
+          "Esteban Ocon",
+          "Isack Hadjar"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Audi"
+        ]
+      },
+      "totalPoints": 285,
+      "costCap": "$0.1M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Audi",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 285,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Audi",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 36,
+      "teamName": "ChrisAo",
+      "manager": "Cost Cap",
+      "lineup": {
+        "drivers": [
+          "Nico Hülkenberg",
+          "Max Verstappen",
+          "Pierre Gasly",
+          "Oliver Bearman",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 282,
+      "costCap": "$2.3M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Max Verstappen",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 282,
+        "drivers": [
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Max Verstappen",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 37,
+      "teamName": "Judy Naka",
+      "manager": "Cost Cap",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Arvid Lindblad",
+          "Oliver Bearman",
+          "Gabriel Bortoleto",
+          "Isack Hadjar"
+        ],
+        "constructors": [
+          "Audi",
+          "Mercedes"
+        ]
+      },
+      "totalPoints": 247,
+      "costCap": "$0.4M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Audi",
+          "points": null
+        },
+        {
+          "name": "Mercedes",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 247,
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Audi",
+            "points": null
+          },
+          {
+            "name": "Mercedes",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 38,
+      "teamName": "champracingt",
+      "manager": "felipe vela",
+      "lineup": {
+        "drivers": [
+          "Franco Colapinto",
+          "Arvid Lindblad",
+          "Gabriel Bortoleto",
+          "Esteban Ocon",
+          "Sergio Pérez"
+        ],
+        "constructors": [
+          "Racing Bulls",
+          "Haas"
+        ]
+      },
+      "totalPoints": 188,
+      "costCap": "$51.2M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Racing Bulls",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 188,
+        "drivers": [
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Racing Bulls",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 39,
+      "teamName": "velaracingteam",
+      "manager": "felipe vela",
+      "lineup": {
+        "drivers": [
+          "Sergio Pérez",
+          "Valtteri Bottas",
+          "Nico Hülkenberg",
+          "Liam Lawson",
+          "Franco Colapinto"
+        ],
+        "constructors": [
+          "Cadillac",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 175,
+      "costCap": "$57.7M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Liam Lawson",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Cadillac",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 175,
+        "drivers": [
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Liam Lawson",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Cadillac",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 40,
+      "teamName": "ZEEEEE TEAM",
+      "manager": "Perla Silva",
+      "lineup": {
+        "drivers": [
+          "Lando Norris",
+          "Carlos Sainz",
+          "Arvid Lindblad",
+          "Valtteri Bottas",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "McLaren",
+          "Williams"
+        ]
+      },
+      "totalPoints": 19,
+      "costCap": "$1.6M",
+      "limitless": false,
+      "turboDriver": null,
+      "drivers": [
+        {
+          "name": "Lando Norris",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Carlos Sainz",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "McLaren",
+          "points": null
+        },
+        {
+          "name": "Williams",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": null,
+        "totalPoints": 19,
+        "drivers": [
+          {
+            "name": "Lando Norris",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Carlos Sainz",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "McLaren",
+            "points": null
+          },
+          {
+            "name": "Williams",
+            "points": null
+          }
+        ]
+      }
+    }
+  ]
+}

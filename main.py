@@ -12,7 +12,7 @@ Usage:
     python main.py --year 2026 --round 1
     python main.py --round monaco --mode lastyear   # Use Monaco 2025 data
     python main.py --round monaco --mode lastrace   # Use previous round data
-    python main.py --data-dir ./fantasy-data/latest # Use local scraper output (freshest data)
+    python main.py --data-dir ./data/fantasy-data/latest # Use local fantasy data snapshot
 
 Modes:
     target   - Use data from the target round (default)
@@ -144,7 +144,7 @@ def main():
         "--data-dir",
         metavar="PATH",
         help="Local fantasy-data directory. Can be a specific folder (e.g. .../latest or .../2026) "
-        "or a base path (e.g. .../fantasy-data) – then uses {path}/{year} or {path}/latest.",
+        "or a base path (e.g. .../data/fantasy-data) – then uses {path}/{year} or {path}/latest.",
     )
     parser.add_argument("--verbose", "-v", action="store_true")
     args = parser.parse_args()

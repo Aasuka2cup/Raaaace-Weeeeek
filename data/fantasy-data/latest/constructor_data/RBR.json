@@ -1,0 +1,66 @@
+{
+  "constructorId": "redbullracing",
+  "name": "redbullracing",
+  "displayName": "red bullracing",
+  "abbreviation": "RBR",
+  "position": 3,
+  "value": "28.5M",
+  "seasonTotalPoints": 42,
+  "percentagePicked": 9,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 42,
+      "race": {
+        "position": 8,
+        "qualifyingPosition": 8,
+        "fastestLap": 10,
+        "pitStopBonus": 0,
+        "fastestPitStop": 5,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 14,
+        "positionsLost": 0,
+        "overtakes": 17
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 0,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 0,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "overtakes": 0
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "overtakes": 0
+      }
+    }
+  ],
+  "extractedAt": "2026-03-11T05:24:57.950Z"
+}

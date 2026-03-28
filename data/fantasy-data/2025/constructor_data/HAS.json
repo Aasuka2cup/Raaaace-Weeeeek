@@ -1,0 +1,542 @@
+{
+  "constructorId": "haas",
+  "name": "haas",
+  "displayName": "haas",
+  "abbreviation": "HAS",
+  "position": 5,
+  "value": "14.4M",
+  "seasonTotalPoints": 429,
+  "percentagePicked": 18,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 14,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 5,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 12,
+        "positionsLost": 0,
+        "overtakes": 3
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 47,
+      "race": {
+        "position": 14,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 15,
+        "positionsLost": 0,
+        "overtakes": 13
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": -1,
+        "overtakes": 3
+      }
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 10,
+      "race": {
+        "position": 1,
+        "qualifyingPosition": 1,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 0,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "overtakes": 3
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "4",
+      "raceName": "Bahrain",
+      "totalPoints": 40,
+      "race": {
+        "position": 5,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 16,
+        "positionsLost": 0,
+        "overtakes": 16
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "5",
+      "raceName": "Saudi Arabia",
+      "totalPoints": 12,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 0,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 7,
+        "positionsLost": 0,
+        "overtakes": 4
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "8",
+      "raceName": "Monaco",
+      "totalPoints": 25,
+      "race": {
+        "position": 6,
+        "qualifyingPosition": 3,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 9,
+        "positionsLost": 0,
+        "overtakes": 0
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "9",
+      "raceName": "Spain",
+      "totalPoints": 6,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": -3,
+        "overtakes": 6
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "10",
+      "raceName": "Canada",
+      "totalPoints": 22,
+      "race": {
+        "position": 2,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 7,
+        "positionsLost": 0,
+        "overtakes": 8
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "11",
+      "raceName": "Austria",
+      "totalPoints": 37,
+      "race": {
+        "position": 1,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 11,
+        "positionsLost": 0,
+        "overtakes": 22
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "12",
+      "raceName": "United Kingdom",
+      "totalPoints": 25,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 3,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 8,
+        "positionsLost": 0,
+        "overtakes": 7
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "13",
+      "raceName": "Belgium",
+      "totalPoints": 15,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": -3,
+        "overtakes": 7
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 6,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "overtakes": 0
+      }
+    },
+    {
+      "round": "14",
+      "raceName": "Hungary",
+      "totalPoints": -9,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 1,
+        "positionsLost": 0,
+        "overtakes": 7
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "15",
+      "raceName": "Netherlands",
+      "totalPoints": 43,
+      "race": {
+        "position": 9,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 22,
+        "positionsLost": 0,
+        "overtakes": 11
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "16",
+      "raceName": "Italy",
+      "totalPoints": -13,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 2,
+        "positionsLost": 0,
+        "overtakes": 4
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "16",
+      "raceName": "Italy",
+      "totalPoints": 7,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 0,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": -1,
+        "overtakes": 5
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "17",
+      "raceName": "Azerbaijan",
+      "totalPoints": 13,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 5,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 9,
+        "positionsLost": 0,
+        "overtakes": 8
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "18",
+      "raceName": "Singapore",
+      "totalPoints": 15,
+      "race": {
+        "position": 2,
+        "qualifyingPosition": 2,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": -1,
+        "overtakes": 5
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "20",
+      "raceName": "Mexico",
+      "totalPoints": 45,
+      "race": {
+        "position": 14,
+        "qualifyingPosition": 1,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 5,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 7,
+        "positionsLost": 0,
+        "overtakes": 13
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "21",
+      "raceName": "Brazil",
+      "totalPoints": 54,
+      "race": {
+        "position": 8,
+        "qualifyingPosition": 3,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 10,
+        "positionsLost": 0,
+        "overtakes": 13
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 10,
+        "positionsLost": 0,
+        "overtakes": 3
+      }
+    },
+    {
+      "round": "22",
+      "raceName": "United States",
+      "totalPoints": 8,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 2,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 0,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": -3,
+        "overtakes": 9
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 5,
+        "positionsLost": 0,
+        "overtakes": 10
+      }
+    },
+    {
+      "round": "22",
+      "raceName": "United States",
+      "totalPoints": 13,
+      "race": {
+        "position": 2,
+        "qualifyingPosition": 3,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 2,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 1,
+        "positionsLost": 0,
+        "overtakes": 9
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 1,
+        "positionsLost": 0,
+        "overtakes": 10
+      }
+    },
+    {
+      "round": "22",
+      "raceName": "United States",
+      "totalPoints": 0,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 0,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "overtakes": 0
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    }
+  ],
+  "extractedAt": "2025-11-19T13:41:12.893Z"
+}

@@ -1,0 +1,62 @@
+{
+  "driverId": "fernandoalonsodriver",
+  "name": "fernandoalonsodriver",
+  "displayName": "fernandoalonso",
+  "abbreviation": "ALO",
+  "team": "Aston Martin",
+  "position": 18,
+  "value": "9.4M",
+  "seasonTotalPoints": 0,
+  "percentagePicked": 9,
+  "isInactive": false,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": -14,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 6,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 0,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      }
+    }
+  ],
+  "extractedAt": "2026-03-11T05:19:21.892Z"
+}

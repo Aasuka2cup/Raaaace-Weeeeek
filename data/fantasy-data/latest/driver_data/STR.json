@@ -1,0 +1,62 @@
+{
+  "driverId": "lancestrolldriver",
+  "name": "lancestrolldriver",
+  "displayName": "lancestroll",
+  "abbreviation": "STR",
+  "team": "Aston Martin",
+  "position": 22,
+  "value": "7.4M",
+  "seasonTotalPoints": 0,
+  "percentagePicked": 3,
+  "isInactive": false,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": -23,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 2,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 0,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      }
+    }
+  ],
+  "extractedAt": "2026-03-11T05:19:46.432Z"
+}

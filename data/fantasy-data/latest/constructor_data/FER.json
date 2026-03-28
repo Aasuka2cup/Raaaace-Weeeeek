@@ -1,0 +1,66 @@
+{
+  "constructorId": "ferrari",
+  "name": "ferrari",
+  "displayName": "ferrari",
+  "abbreviation": "FER",
+  "position": 2,
+  "value": "23.6M",
+  "seasonTotalPoints": 69,
+  "percentagePicked": 41,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 69,
+      "race": {
+        "position": 27,
+        "qualifyingPosition": 11,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 5,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 4,
+        "positionsLost": 0,
+        "overtakes": 12
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 0,
+      "race": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "pitStopBonus": 0,
+        "fastestPitStop": 0,
+        "worldRecordBonus": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "overtakes": 0
+      },
+      "qualifying": {
+        "q2Bonus": 0,
+        "q3Bonus": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "disqualificationPenalty": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "overtakes": 0
+      }
+    }
+  ],
+  "extractedAt": "2026-03-11T05:24:51.812Z"
+}

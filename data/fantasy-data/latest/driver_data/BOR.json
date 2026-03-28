@@ -1,0 +1,62 @@
+{
+  "driverId": "gabrielbortoletodriver",
+  "name": "gabrielbortoletodriver",
+  "displayName": "gabrielbortoleto",
+  "abbreviation": "BOR",
+  "team": "Audi",
+  "position": 9,
+  "value": "7M",
+  "seasonTotalPoints": 13,
+  "percentagePicked": 32,
+  "isInactive": false,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 13,
+      "race": {
+        "dotd": 0,
+        "position": 2,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 9,
+        "positionsGained": 1,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 1,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 0,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      }
+    }
+  ],
+  "extractedAt": "2026-03-11T05:18:26.662Z"
+}

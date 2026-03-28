@@ -1,0 +1,62 @@
+{
+  "driverId": "georgerusselldriver",
+  "name": "georgerusselldriver",
+  "displayName": "georgerussell",
+  "abbreviation": "RUS",
+  "team": "Mercedes",
+  "position": 2,
+  "value": "27.7M",
+  "seasonTotalPoints": 39,
+  "percentagePicked": 28,
+  "isInactive": false,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 39,
+      "race": {
+        "dotd": 0,
+        "position": 25,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 4,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 10,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 0,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      }
+    }
+  ],
+  "extractedAt": "2026-03-11T05:17:43.721Z"
+}

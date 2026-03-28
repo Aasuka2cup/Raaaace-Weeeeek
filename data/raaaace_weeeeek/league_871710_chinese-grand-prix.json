@@ -1,0 +1,5863 @@
+{
+  "leagueUrl": "https://fantasy.formula1.com/en/leagues/leaderboard/public/871710",
+  "targetRace": "Chinese Grand Prix",
+  "scrapedAt": "2026-03-28T04:45:16.246Z",
+  "teams": [
+    {
+      "rank": 1,
+      "teamName": "Kerbau Racing F1 Team",
+      "manager": "Minzer Teo",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Charles Leclerc",
+          "Lewis Hamilton",
+          "Kimi Antonelli",
+          "Lando Norris"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 481,
+      "costCap": "$0.0M",
+      "limitless": true,
+      "chip": null,
+      "chips": {
+        "x3Boost": true,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": true,
+        "finalFix": false,
+        "autopilot": false,
+        "used": [
+          "x3 Boost",
+          "Limitless"
+        ]
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lando Norris",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 481,
+        "chip": null,
+        "chips": {
+          "x3Boost": true,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": true,
+          "finalFix": false,
+          "autopilot": false,
+          "used": [
+            "x3 Boost",
+            "Limitless"
+          ]
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lando Norris",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Kerbau Racing F1 Team"
+    },
+    {
+      "rank": 2,
+      "teamName": "Li Xiang Racing",
+      "manager": "Yuzhao Wang",
+      "lineup": {
+        "drivers": [
+          "Kimi Antonelli",
+          "Charles Leclerc",
+          "Esteban Ocon",
+          "Oliver Bearman",
+          "Valtteri Bottas"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Haas"
+        ]
+      },
+      "totalPoints": 432,
+      "costCap": "$0.6M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Kimi Antonelli",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 432,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Li Xiang Racing"
+    },
+    {
+      "rank": 3,
+      "teamName": "THEMOSTPOINTSPOSSIBLE",
+      "manager": "Minzer Teo",
+      "lineup": {
+        "drivers": [
+          "Lewis Hamilton",
+          "Kimi Antonelli",
+          "Oscar Piastri",
+          "Oliver Bearman",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Racing Bulls",
+          "Haas"
+        ]
+      },
+      "totalPoints": 429,
+      "costCap": "$0.1M",
+      "limitless": false,
+      "chip": "x3 Boost",
+      "chips": {
+        "x3Boost": true,
+        "x3BoostDriver": "Kimi Antonelli",
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": [
+          "x3 Boost"
+        ]
+      },
+      "turboDriver": "Lewis Hamilton",
+      "x3BoostDriver": "Kimi Antonelli",
+      "excessTransfers": 2,
+      "transfer": {
+        "made": 4,
+        "allowed": 2,
+        "remaining": -2,
+        "excess": 2,
+        "overLimit": true,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 20
+      },
+      "drivers": [
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oscar Piastri",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Racing Bulls",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 429,
+        "chip": "x3 Boost",
+        "chips": {
+          "x3Boost": true,
+          "x3BoostDriver": "Kimi Antonelli",
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": [
+            "x3 Boost"
+          ]
+        },
+        "x3BoostDriver": "Kimi Antonelli",
+        "excessTransfers": 2,
+        "transfer": {
+          "made": 4,
+          "allowed": 2,
+          "remaining": -2,
+          "excess": 2,
+          "overLimit": true,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 20
+        },
+        "drivers": [
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oscar Piastri",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Racing Bulls",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "THEMOSTPOINTSPOSSIBLE"
+    },
+    {
+      "rank": 4,
+      "teamName": "cadillacLast",
+      "manager": "Atanas Belomorov",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "George Russell",
+          "Gabriel Bortoleto",
+          "Sergio Pérez",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Cadillac",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 419,
+      "costCap": "$0.4M",
+      "limitless": false,
+      "chip": "x3 Boost",
+      "chips": {
+        "x3Boost": true,
+        "x3BoostDriver": "George Russell",
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": [
+          "x3 Boost"
+        ]
+      },
+      "turboDriver": "Charles Leclerc",
+      "x3BoostDriver": "George Russell",
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 2,
+        "allowed": 2,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Cadillac",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 419,
+        "chip": "x3 Boost",
+        "chips": {
+          "x3Boost": true,
+          "x3BoostDriver": "George Russell",
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": [
+            "x3 Boost"
+          ]
+        },
+        "x3BoostDriver": "George Russell",
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 2,
+          "allowed": 2,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Cadillac",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "cadillacLast"
+    },
+    {
+      "rank": 5,
+      "teamName": "prolific1",
+      "manager": "Max Ult",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Kimi Antonelli",
+          "Oliver Bearman",
+          "Nico Hülkenberg",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Haas"
+        ]
+      },
+      "totalPoints": 402,
+      "costCap": "$2.9M",
+      "limitless": false,
+      "chip": "Autopilot",
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": true,
+        "used": [
+          "Autopilot"
+        ]
+      },
+      "turboDriver": "Charles Leclerc",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 402,
+        "chip": "Autopilot",
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": true,
+          "used": [
+            "Autopilot"
+          ]
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "prolific1"
+    },
+    {
+      "rank": 6,
+      "teamName": "Girone GXE-26A",
+      "manager": "Pato Busti",
+      "lineup": {
+        "drivers": [
+          "Kimi Antonelli",
+          "Charles Leclerc",
+          "Nico Hülkenberg",
+          "Oliver Bearman",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Haas"
+        ]
+      },
+      "totalPoints": 398,
+      "costCap": "$0.9M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Kimi Antonelli",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 2,
+        "allowed": 2,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 398,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 2,
+          "allowed": 2,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Girone GXE-26A"
+    },
+    {
+      "rank": 7,
+      "teamName": "testing testing1",
+      "manager": "Judy Naka",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "George Russell",
+          "Arvid Lindblad",
+          "Oliver Bearman",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Racing Bulls",
+          "Haas"
+        ]
+      },
+      "totalPoints": 379,
+      "costCap": "$12.5M",
+      "limitless": false,
+      "chip": "x3 Boost",
+      "chips": {
+        "x3Boost": true,
+        "x3BoostDriver": "George Russell",
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": [
+          "x3 Boost"
+        ]
+      },
+      "turboDriver": "Charles Leclerc",
+      "x3BoostDriver": "George Russell",
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Racing Bulls",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 379,
+        "chip": "x3 Boost",
+        "chips": {
+          "x3Boost": true,
+          "x3BoostDriver": "George Russell",
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": [
+            "x3 Boost"
+          ]
+        },
+        "x3BoostDriver": "George Russell",
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Racing Bulls",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "testing testing1"
+    },
+    {
+      "rank": 8,
+      "teamName": "Le Clerc's Tale",
+      "manager": "Matt McCracken",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Oliver Bearman",
+          "Liam Lawson",
+          "Valtteri Bottas",
+          "Franco Colapinto"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 372,
+      "costCap": "$14.5M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Charles Leclerc",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Liam Lawson",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 372,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Liam Lawson",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Le Clerc's Tale"
+    },
+    {
+      "rank": 9,
+      "teamName": "T1",
+      "manager": "Aasuka Martini F1",
+      "lineup": {
+        "drivers": [
+          "Lewis Hamilton",
+          "Oliver Bearman",
+          "Kimi Antonelli",
+          "Gabriel Bortoleto",
+          "Franco Colapinto"
+        ],
+        "constructors": [
+          "Racing Bulls",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 371,
+      "costCap": "$2.0M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Lewis Hamilton",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Racing Bulls",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 371,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Racing Bulls",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "T1"
+    },
+    {
+      "rank": 9,
+      "teamName": "Team Ferrari 2026",
+      "manager": "Atanas Belomorov",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Esteban Ocon",
+          "Gabriel Bortoleto",
+          "Kimi Antonelli",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Haas"
+        ]
+      },
+      "totalPoints": 371,
+      "costCap": "$1.0M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": true,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": true,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": [
+          "x3 Boost",
+          "Wildcard"
+        ]
+      },
+      "turboDriver": "Charles Leclerc",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 371,
+        "chip": null,
+        "chips": {
+          "x3Boost": true,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": true,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": [
+            "x3 Boost",
+            "Wildcard"
+          ]
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Team Ferrari 2026"
+    },
+    {
+      "rank": 11,
+      "teamName": "Can't Stop The Russell",
+      "manager": "Matt McCracken",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Sergio Pérez",
+          "Franco Colapinto",
+          "Liam Lawson",
+          "Esteban Ocon"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 367,
+      "costCap": "$9.9M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Liam Lawson",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 367,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Liam Lawson",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Can't Stop The Russell"
+    },
+    {
+      "rank": 11,
+      "teamName": "Xiao MI",
+      "manager": "Yuzhao Wang",
+      "lineup": {
+        "drivers": [
+          "Lewis Hamilton",
+          "Sergio Pérez",
+          "Arvid Lindblad",
+          "Nico Hülkenberg",
+          "Valtteri Bottas"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 367,
+      "costCap": "$0.1M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Lewis Hamilton",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 367,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Xiao MI"
+    },
+    {
+      "rank": 13,
+      "teamName": "Girone GXE-26B",
+      "manager": "Pato Busti",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "George Russell",
+          "Lewis Hamilton",
+          "Kimi Antonelli",
+          "Lando Norris"
+        ],
+        "constructors": [
+          "Cadillac",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 0,
+      "costCap": "",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Lewis Hamilton",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lando Norris",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Cadillac",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 0,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lando Norris",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Cadillac",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Girone GXE-26B"
+    },
+    {
+      "rank": 14,
+      "teamName": "luka lululu",
+      "manager": "Hung Jack",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Esteban Ocon",
+          "Oliver Bearman",
+          "Pierre Gasly",
+          "Nico Hülkenberg"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 355,
+      "costCap": "$1.6M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 2,
+        "allowed": 2,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 355,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 2,
+          "allowed": 2,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "luka lululu"
+    },
+    {
+      "rank": 15,
+      "teamName": "Midfield Monstaz",
+      "manager": "Var too cool",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Pierre Gasly",
+          "Fernando Alonso",
+          "Isack Hadjar",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Haas"
+        ]
+      },
+      "totalPoints": 352,
+      "costCap": "$1.5M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Charles Leclerc",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 2,
+        "allowed": 2,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Fernando Alonso",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 352,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 2,
+          "allowed": 2,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Fernando Alonso",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Midfield Monstaz"
+    },
+    {
+      "rank": 15,
+      "teamName": "MJJ123",
+      "manager": "Miao JunJi",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Lewis Hamilton",
+          "Liam Lawson",
+          "Valtteri Bottas",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Racing Bulls",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 352,
+      "costCap": "$0.8M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Liam Lawson",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Racing Bulls",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 352,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Liam Lawson",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Racing Bulls",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "MJJ123"
+    },
+    {
+      "rank": 15,
+      "teamName": "Toto Recall 2",
+      "manager": "Matt McCracken",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Gabriel Bortoleto",
+          "Sergio Pérez",
+          "Arvid Lindblad",
+          "Valtteri Bottas"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 352,
+      "costCap": "$0.1M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Charles Leclerc",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 352,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Toto Recall 2"
+    },
+    {
+      "rank": 18,
+      "teamName": "prolific3",
+      "manager": "Max Ult",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "George Russell",
+          "Lewis Hamilton",
+          "Oliver Bearman",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Haas",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 351,
+      "costCap": "$0.0M",
+      "limitless": false,
+      "chip": "Autopilot",
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": true,
+        "used": [
+          "Autopilot"
+        ]
+      },
+      "turboDriver": "Charles Leclerc",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Haas",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 351,
+        "chip": "Autopilot",
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": true,
+          "used": [
+            "Autopilot"
+          ]
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Haas",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "prolific3"
+    },
+    {
+      "rank": 19,
+      "teamName": "Girone GXE-26C",
+      "manager": "Pato Busti",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Kimi Antonelli",
+          "Isack Hadjar",
+          "Pierre Gasly",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Haas",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 346,
+      "costCap": "$1.0M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 2,
+        "allowed": 2,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Haas",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 346,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 2,
+          "allowed": 2,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Haas",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Girone GXE-26C"
+    },
+    {
+      "rank": 20,
+      "teamName": "VvvvvvD",
+      "manager": "Vivian Dai",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Isack Hadjar",
+          "Arvid Lindblad",
+          "Nico Hülkenberg",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 337,
+      "costCap": "$0.4M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 337,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "VvvvvvD"
+    },
+    {
+      "rank": 21,
+      "teamName": "Jack hung",
+      "manager": "Hung Jack",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Oliver Bearman",
+          "Liam Lawson",
+          "Isack Hadjar",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 334,
+      "costCap": "$1.4M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 1,
+      "transfer": {
+        "made": 3,
+        "allowed": 2,
+        "remaining": -1,
+        "excess": 1,
+        "overLimit": true,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 10
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Liam Lawson",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 334,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 1,
+        "transfer": {
+          "made": 3,
+          "allowed": 2,
+          "remaining": -1,
+          "excess": 1,
+          "overLimit": true,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 10
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Liam Lawson",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Jack hung"
+    },
+    {
+      "rank": 22,
+      "teamName": "rokieracing",
+      "manager": "felipe vela",
+      "lineup": {
+        "drivers": [
+          "Franco Colapinto",
+          "Esteban Ocon",
+          "Arvid Lindblad",
+          "Gabriel Bortoleto",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Mercedes"
+        ]
+      },
+      "totalPoints": 321,
+      "costCap": "$10.7M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Franco Colapinto",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Mercedes",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 321,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Mercedes",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "rokieracing"
+    },
+    {
+      "rank": 23,
+      "teamName": "Underrated Monstaz",
+      "manager": "Var too cool",
+      "lineup": {
+        "drivers": [
+          "Lewis Hamilton",
+          "Pierre Gasly",
+          "Isack Hadjar",
+          "Oliver Bearman",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 320,
+      "costCap": "$1.4M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Lewis Hamilton",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 2,
+        "allowed": 2,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 320,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 2,
+          "allowed": 2,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Underrated Monstaz"
+    },
+    {
+      "rank": 24,
+      "teamName": "prolific2",
+      "manager": "Max Ult",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Isack Hadjar",
+          "Oliver Bearman",
+          "Esteban Ocon",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 318,
+      "costCap": "$0.8M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 318,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "prolific2"
+    },
+    {
+      "rank": 25,
+      "teamName": "T2",
+      "manager": "Roookies Racing",
+      "lineup": {
+        "drivers": [
+          "Isack Hadjar",
+          "Franco Colapinto",
+          "Gabriel Bortoleto",
+          "Arvid Lindblad",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 317,
+      "costCap": "$4.1M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Isack Hadjar",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 317,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "T2"
+    },
+    {
+      "rank": 25,
+      "teamName": "Yahhhhh",
+      "manager": "mou jin wei",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Oliver Bearman",
+          "Gabriel Bortoleto",
+          "Nico Hülkenberg",
+          "Pierre Gasly"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Haas"
+        ]
+      },
+      "totalPoints": 317,
+      "costCap": "$1.3M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 317,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Yahhhhh"
+    },
+    {
+      "rank": 27,
+      "teamName": "Jimmy Clark F1",
+      "manager": "Shaun Carroll",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "Gabriel Bortoleto",
+          "Sergio Pérez",
+          "Nico Hülkenberg",
+          "Isack Hadjar"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Alpine"
+        ]
+      },
+      "totalPoints": 298,
+      "costCap": "$6.5M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Charles Leclerc",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 2,
+        "allowed": 2,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Alpine",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 298,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 2,
+          "allowed": 2,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Alpine",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Jimmy Clark F1"
+    },
+    {
+      "rank": 28,
+      "teamName": "Damian Hill Superstar",
+      "manager": "Shaun Carroll",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "George Russell",
+          "Lewis Hamilton",
+          "Kimi Antonelli",
+          "Lando Norris"
+        ],
+        "constructors": [
+          "Cadillac",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 0,
+      "costCap": "",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Kimi Antonelli",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 1,
+        "allowed": 2,
+        "remaining": 1,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Lando Norris",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Cadillac",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 0,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 1,
+          "allowed": 2,
+          "remaining": 1,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Lando Norris",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Cadillac",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Damian Hill Superstar"
+    },
+    {
+      "rank": 29,
+      "teamName": "T3",
+      "manager": "Expensive is better",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Nico Hülkenberg",
+          "Oliver Bearman",
+          "Esteban Ocon",
+          "Isack Hadjar"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Audi"
+        ]
+      },
+      "totalPoints": 285,
+      "costCap": "$0.1M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Audi",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 285,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Audi",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "T3"
+    },
+    {
+      "rank": 30,
+      "teamName": "Zürich with MAX",
+      "manager": "Raaaace Weeeeek",
+      "lineup": {
+        "drivers": [
+          "Nico Hülkenberg",
+          "Max Verstappen",
+          "Pierre Gasly",
+          "Oliver Bearman",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Cadillac",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 282,
+      "costCap": "$2.3M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": true,
+        "x3BoostDriver": "Max Verstappen",
+        "noNegative": false,
+        "wildcard": true,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": [
+          "x3 Boost",
+          "Wildcard"
+        ]
+      },
+      "turboDriver": "Nico Hülkenberg",
+      "x3BoostDriver": "Max Verstappen",
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Max Verstappen",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Cadillac",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 282,
+        "chip": null,
+        "chips": {
+          "x3Boost": true,
+          "x3BoostDriver": "Max Verstappen",
+          "noNegative": false,
+          "wildcard": true,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": [
+            "x3 Boost",
+            "Wildcard"
+          ]
+        },
+        "x3BoostDriver": "Max Verstappen",
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Max Verstappen",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Cadillac",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "The Official Formula 1 Fantasy Game"
+    },
+    {
+      "rank": 31,
+      "teamName": "DuDuDuDuMaxVers",
+      "manager": "Atanas Belomorov",
+      "lineup": {
+        "drivers": [
+          "Oliver Bearman",
+          "Max Verstappen",
+          "Franco Colapinto",
+          "Esteban Ocon",
+          "Pierre Gasly"
+        ],
+        "constructors": [
+          "Red Bull",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 267,
+      "costCap": "$2.9M",
+      "limitless": false,
+      "chip": "x3 Boost",
+      "chips": {
+        "x3Boost": true,
+        "x3BoostDriver": "Max Verstappen",
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": [
+          "x3 Boost"
+        ]
+      },
+      "turboDriver": "Oliver Bearman",
+      "x3BoostDriver": "Max Verstappen",
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 2,
+        "allowed": 2,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Max Verstappen",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Red Bull",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 267,
+        "chip": "x3 Boost",
+        "chips": {
+          "x3Boost": true,
+          "x3BoostDriver": "Max Verstappen",
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": [
+            "x3 Boost"
+          ]
+        },
+        "x3BoostDriver": "Max Verstappen",
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 2,
+          "allowed": 2,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Max Verstappen",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Red Bull",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "DuDuDuDuMaxVers"
+    },
+    {
+      "rank": 31,
+      "teamName": "VarsMonstaz",
+      "manager": "Var too cool",
+      "lineup": {
+        "drivers": [
+          "Max Verstappen",
+          "Pierre Gasly",
+          "Arvid Lindblad",
+          "Isack Hadjar",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Ferrari",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 267,
+      "costCap": "$0.8M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Max Verstappen",
+      "x3BoostDriver": null,
+      "excessTransfers": 1,
+      "transfer": {
+        "made": 3,
+        "allowed": 2,
+        "remaining": -1,
+        "excess": 1,
+        "overLimit": true,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 10
+      },
+      "drivers": [
+        {
+          "name": "Max Verstappen",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Ferrari",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 267,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 1,
+        "transfer": {
+          "made": 3,
+          "allowed": 2,
+          "remaining": -1,
+          "excess": 1,
+          "overLimit": true,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 10
+        },
+        "drivers": [
+          {
+            "name": "Max Verstappen",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Ferrari",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "VarsMonstaz"
+    },
+    {
+      "rank": 33,
+      "teamName": "\"Simply Lovely That!\"",
+      "manager": "Raaaace Weeeeek",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Isack Hadjar",
+          "Oliver Bearman",
+          "Arvid Lindblad",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "Cadillac",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 261,
+      "costCap": "$0.8M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": true,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": true,
+        "used": [
+          "x3 Boost",
+          "Autopilot"
+        ]
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 4,
+      "transfer": {
+        "made": 6,
+        "allowed": 2,
+        "remaining": -4,
+        "excess": 4,
+        "overLimit": true,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 40
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Cadillac",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 261,
+        "chip": null,
+        "chips": {
+          "x3Boost": true,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": true,
+          "used": [
+            "x3 Boost",
+            "Autopilot"
+          ]
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 4,
+        "transfer": {
+          "made": 6,
+          "allowed": 2,
+          "remaining": -4,
+          "excess": 4,
+          "overLimit": true,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 40
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Cadillac",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "The Official Formula 1 Fantasy Game"
+    },
+    {
+      "rank": 34,
+      "teamName": "ChrisAo",
+      "manager": "chris ao",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Arvid Lindblad",
+          "Oliver Bearman",
+          "Gabriel Bortoleto",
+          "Isack Hadjar"
+        ],
+        "constructors": [
+          "Audi",
+          "Mercedes"
+        ]
+      },
+      "totalPoints": 247,
+      "costCap": "$0.4M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Isack Hadjar",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Audi",
+          "points": null
+        },
+        {
+          "name": "Mercedes",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 247,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Isack Hadjar",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Audi",
+            "points": null
+          },
+          {
+            "name": "Mercedes",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "ChrisAo"
+    },
+    {
+      "rank": 35,
+      "teamName": "Bro Where Is My F1 Car",
+      "manager": "Shaun Carroll",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Gabriel Bortoleto",
+          "Nico Hülkenberg",
+          "Carlos Sainz",
+          "Arvid Lindblad"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Audi"
+        ]
+      },
+      "totalPoints": 229,
+      "costCap": "$4.7M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 1,
+        "allowed": 2,
+        "remaining": 1,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Carlos Sainz",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Audi",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 229,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 1,
+          "allowed": 2,
+          "remaining": 1,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Nico Hülkenberg",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Carlos Sainz",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Audi",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Bro Where Is My F1 Car"
+    },
+    {
+      "rank": 36,
+      "teamName": "big Smiling",
+      "manager": "Judy Naka",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Oscar Piastri",
+          "Arvid Lindblad",
+          "Gabriel Bortoleto",
+          "Oliver Bearman"
+        ],
+        "constructors": [
+          "Haas",
+          "Racing Bulls"
+        ]
+      },
+      "totalPoints": 225,
+      "costCap": "$12.2M",
+      "limitless": true,
+      "chip": "Limitless",
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": true,
+        "finalFix": false,
+        "autopilot": false,
+        "used": [
+          "Limitless"
+        ]
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 1,
+        "allowed": 2,
+        "remaining": 1,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Oscar Piastri",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Haas",
+          "points": null
+        },
+        {
+          "name": "Racing Bulls",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 225,
+        "chip": "Limitless",
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": true,
+          "finalFix": false,
+          "autopilot": false,
+          "used": [
+            "Limitless"
+          ]
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 1,
+          "allowed": 2,
+          "remaining": 1,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Oscar Piastri",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Haas",
+            "points": null
+          },
+          {
+            "name": "Racing Bulls",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "big Smiling"
+    },
+    {
+      "rank": 37,
+      "teamName": "Judy Naka",
+      "manager": "Cost Cap",
+      "lineup": {
+        "drivers": [
+          "George Russell",
+          "Oliver Bearman",
+          "Gabriel Bortoleto",
+          "Pierre Gasly",
+          "Esteban Ocon"
+        ],
+        "constructors": [
+          "Mercedes",
+          "Audi"
+        ]
+      },
+      "totalPoints": 195,
+      "costCap": "$1.6M",
+      "limitless": false,
+      "chip": "Autopilot",
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": true,
+        "used": [
+          "Autopilot"
+        ]
+      },
+      "turboDriver": "George Russell",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Oliver Bearman",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Pierre Gasly",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Mercedes",
+          "points": null
+        },
+        {
+          "name": "Audi",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 195,
+        "chip": "Autopilot",
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": true,
+          "used": [
+            "Autopilot"
+          ]
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Oliver Bearman",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Pierre Gasly",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Mercedes",
+            "points": null
+          },
+          {
+            "name": "Audi",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "Judy Naka"
+    },
+    {
+      "rank": 38,
+      "teamName": "champracingt",
+      "manager": "felipe vela",
+      "lineup": {
+        "drivers": [
+          "Franco Colapinto",
+          "Arvid Lindblad",
+          "Gabriel Bortoleto",
+          "Esteban Ocon",
+          "Sergio Pérez"
+        ],
+        "constructors": [
+          "Racing Bulls",
+          "Haas"
+        ]
+      },
+      "totalPoints": 188,
+      "costCap": "$51.2M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Franco Colapinto",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 0,
+        "remaining": 0,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Franco Colapinto",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Esteban Ocon",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Sergio Pérez",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Racing Bulls",
+          "points": null
+        },
+        {
+          "name": "Haas",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 188,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 0,
+          "remaining": 0,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Franco Colapinto",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Esteban Ocon",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Sergio Pérez",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Racing Bulls",
+            "points": null
+          },
+          {
+            "name": "Haas",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "champracingt"
+    },
+    {
+      "rank": 39,
+      "teamName": "velaracingteam",
+      "manager": "felipe vela",
+      "lineup": {
+        "drivers": [
+          "Charles Leclerc",
+          "George Russell",
+          "Lewis Hamilton",
+          "Kimi Antonelli",
+          "Lando Norris"
+        ],
+        "constructors": [
+          "Cadillac",
+          "Ferrari"
+        ]
+      },
+      "totalPoints": 0,
+      "costCap": "",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": null,
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": null,
+        "allowed": null,
+        "remaining": null,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": null,
+        "penaltyPoints": null
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "George Russell",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lewis Hamilton",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Kimi Antonelli",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Lando Norris",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "Cadillac",
+          "points": null
+        },
+        {
+          "name": "Ferrari",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 0,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": null,
+          "allowed": null,
+          "remaining": null,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": null,
+          "penaltyPoints": null
+        },
+        "drivers": [
+          {
+            "name": "Charles Leclerc",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "George Russell",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lewis Hamilton",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Kimi Antonelli",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Lando Norris",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "Cadillac",
+            "points": null
+          },
+          {
+            "name": "Ferrari",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "velaracingteam"
+    },
+    {
+      "rank": 40,
+      "teamName": "ZEEEEE TEAM",
+      "manager": "Perla Silva",
+      "lineup": {
+        "drivers": [
+          "Lando Norris",
+          "Carlos Sainz",
+          "Arvid Lindblad",
+          "Valtteri Bottas",
+          "Gabriel Bortoleto"
+        ],
+        "constructors": [
+          "McLaren",
+          "Williams"
+        ]
+      },
+      "totalPoints": 19,
+      "costCap": "$1.6M",
+      "limitless": false,
+      "chip": null,
+      "chips": {
+        "x3Boost": false,
+        "x3BoostDriver": null,
+        "noNegative": false,
+        "wildcard": false,
+        "limitless": false,
+        "finalFix": false,
+        "autopilot": false,
+        "used": []
+      },
+      "turboDriver": "Lando Norris",
+      "x3BoostDriver": null,
+      "excessTransfers": 0,
+      "transfer": {
+        "made": 0,
+        "allowed": 2,
+        "remaining": 2,
+        "excess": 0,
+        "overLimit": false,
+        "penaltyPerTransfer": 10,
+        "penaltyPoints": 0
+      },
+      "drivers": [
+        {
+          "name": "Lando Norris",
+          "points": null,
+          "turbo": true
+        },
+        {
+          "name": "Carlos Sainz",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Arvid Lindblad",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Valtteri Bottas",
+          "points": null,
+          "turbo": false
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "points": null,
+          "turbo": false
+        }
+      ],
+      "constructors": [
+        {
+          "name": "McLaren",
+          "points": null
+        },
+        {
+          "name": "Williams",
+          "points": null
+        }
+      ],
+      "selectedRace": {
+        "race": "Chinese Grand Prix",
+        "totalPoints": 19,
+        "chip": null,
+        "chips": {
+          "x3Boost": false,
+          "x3BoostDriver": null,
+          "noNegative": false,
+          "wildcard": false,
+          "limitless": false,
+          "finalFix": false,
+          "autopilot": false,
+          "used": []
+        },
+        "x3BoostDriver": null,
+        "excessTransfers": 0,
+        "transfer": {
+          "made": 0,
+          "allowed": 2,
+          "remaining": 2,
+          "excess": 0,
+          "overLimit": false,
+          "penaltyPerTransfer": 10,
+          "penaltyPoints": 0
+        },
+        "drivers": [
+          {
+            "name": "Lando Norris",
+            "points": null,
+            "turbo": true
+          },
+          {
+            "name": "Carlos Sainz",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Arvid Lindblad",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Valtteri Bottas",
+            "points": null,
+            "turbo": false
+          },
+          {
+            "name": "Gabriel Bortoleto",
+            "points": null,
+            "turbo": false
+          }
+        ],
+        "constructors": [
+          {
+            "name": "McLaren",
+            "points": null
+          },
+          {
+            "name": "Williams",
+            "points": null
+          }
+        ]
+      },
+      "detailTeamName": "ZEEEEE TEAM"
+    }
+  ]
+}

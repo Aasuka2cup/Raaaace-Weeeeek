@@ -1,0 +1,230 @@
+{
+  "McLaren": {
+    "drivers": [
+      {
+        "abbreviation": "NOR",
+        "name": "landonorris",
+        "points": 663,
+        "percentagePicked": 23,
+        "value": "30.5M",
+        "position": 1
+      },
+      {
+        "abbreviation": "PIA",
+        "name": "oscarpiastri",
+        "points": 584,
+        "percentagePicked": 36,
+        "value": "25.7M",
+        "position": 3
+      }
+    ],
+    "totalPoints": 1247,
+    "averagePercentagePicked": 30
+  },
+  "Red Bull Racing": {
+    "drivers": [
+      {
+        "abbreviation": "VER",
+        "name": "maxverstappen",
+        "points": 619,
+        "percentagePicked": 20,
+        "value": "29.5M",
+        "position": 2
+      },
+      {
+        "abbreviation": "TSU",
+        "name": "yukitsunoda",
+        "points": 161,
+        "percentagePicked": 6,
+        "value": "11.4M",
+        "position": 10
+      }
+    ],
+    "totalPoints": 780,
+    "averagePercentagePicked": 13
+  },
+  "Mercedes": {
+    "drivers": [
+      {
+        "abbreviation": "RUS",
+        "name": "georgerussell",
+        "points": 508,
+        "percentagePicked": 12,
+        "value": "23.5M",
+        "position": 4
+      },
+      {
+        "abbreviation": "ANT",
+        "name": "kimiantonelli",
+        "points": 251,
+        "percentagePicked": 20,
+        "value": "16.9M",
+        "position": 7
+      }
+    ],
+    "totalPoints": 759,
+    "averagePercentagePicked": 16
+  },
+  "Ferrari": {
+    "drivers": [
+      {
+        "abbreviation": "LEC",
+        "name": "charlesleclerc",
+        "points": 344,
+        "percentagePicked": 14,
+        "value": "23.4M",
+        "position": 5
+      },
+      {
+        "abbreviation": "HAM",
+        "name": "lewishamilton",
+        "points": 335,
+        "percentagePicked": 11,
+        "value": "22.5M",
+        "position": 6
+      }
+    ],
+    "totalPoints": 679,
+    "averagePercentagePicked": 13
+  },
+  "Haas": {
+    "drivers": [
+      {
+        "abbreviation": "BEA",
+        "name": "oliverbearman",
+        "points": 207,
+        "percentagePicked": 42,
+        "value": "8.9M",
+        "position": 8
+      },
+      {
+        "abbreviation": "OCO",
+        "name": "estebanocon",
+        "points": 141,
+        "percentagePicked": 22,
+        "value": "6.7M",
+        "position": 12
+      }
+    ],
+    "totalPoints": 348,
+    "averagePercentagePicked": 32
+  },
+  "Williams": {
+    "drivers": [
+      {
+        "abbreviation": "ALB",
+        "name": "alexanderalbon",
+        "points": 200,
+        "percentagePicked": 28,
+        "value": "13.8M",
+        "position": 9
+      },
+      {
+        "abbreviation": "SAI",
+        "name": "carlossainz",
+        "points": 84,
+        "percentagePicked": 43,
+        "value": "6.5M",
+        "position": 15
+      }
+    ],
+    "totalPoints": 284,
+    "averagePercentagePicked": 36
+  },
+  "Aston Martin": {
+    "drivers": [
+      {
+        "abbreviation": "STR",
+        "name": "lancestroll",
+        "points": 144,
+        "percentagePicked": 10,
+        "value": "7.9M",
+        "position": 11
+      },
+      {
+        "abbreviation": "ALO",
+        "name": "fernandoalonso",
+        "points": 27,
+        "percentagePicked": 37,
+        "value": "4.9M",
+        "position": 19
+      }
+    ],
+    "totalPoints": 171,
+    "averagePercentagePicked": 24
+  },
+  "Kick Sauber": {
+    "drivers": [
+      {
+        "abbreviation": "HUL",
+        "name": "nicohulkenberg",
+        "points": 130,
+        "percentagePicked": 32,
+        "value": "6.2M",
+        "position": 13
+      },
+      {
+        "abbreviation": "BOR",
+        "name": "gabrielbortoleto",
+        "points": 53,
+        "percentagePicked": 26,
+        "value": "6.7M",
+        "position": 17
+      }
+    ],
+    "totalPoints": 183,
+    "averagePercentagePicked": 29
+  },
+  "Racing Bulls": {
+    "drivers": [
+      {
+        "abbreviation": "HAD",
+        "name": "isackhadjar",
+        "points": 96,
+        "percentagePicked": 55,
+        "value": "5.7M",
+        "position": 14
+      },
+      {
+        "abbreviation": "LAW",
+        "name": "liamlawson",
+        "points": 53,
+        "percentagePicked": 12,
+        "value": "5.9M",
+        "position": 18
+      }
+    ],
+    "totalPoints": 149,
+    "averagePercentagePicked": 34
+  },
+  "Alpine": {
+    "drivers": [
+      {
+        "abbreviation": "GAS",
+        "name": "pierregasly",
+        "points": 54,
+        "percentagePicked": 20,
+        "value": "5.3M",
+        "position": 16
+      },
+      {
+        "abbreviation": "COL",
+        "name": "francocolapinto",
+        "points": 2,
+        "percentagePicked": 10,
+        "value": "4.5M",
+        "position": 22
+      },
+      {
+        "abbreviation": "DOO",
+        "name": "jackdoohan",
+        "points": 0,
+        "percentagePicked": 8,
+        "value": "4.5M",
+        "position": 23
+      }
+    ],
+    "totalPoints": 56,
+    "averagePercentagePicked": 13
+  }
+}

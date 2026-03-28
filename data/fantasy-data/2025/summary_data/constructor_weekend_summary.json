@@ -1,0 +1,197 @@
+{
+  "1": {
+    "raceName": "Australia",
+    "constructors": {
+      "MCL": 71,
+      "RBR": 19,
+      "MER": 67,
+      "FER": 36,
+      "HAS": 14,
+      "WIL": 10,
+      "RB": -10,
+      "AMR": 1,
+      "SAU": 3,
+      "ALP": -14
+    }
+  },
+  "2": {
+    "raceName": "China",
+    "constructors": {
+      "MCL": 101,
+      "RBR": 67,
+      "MER": 69,
+      "FER": -23,
+      "HAS": 47,
+      "WIL": 26,
+      "RB": 42,
+      "AMR": 4,
+      "SAU": 12,
+      "ALP": -6
+    }
+  },
+  "3": {
+    "raceName": "Japan",
+    "constructors": {
+      "MCL": 71,
+      "RBR": 46,
+      "MER": 56,
+      "FER": 56,
+      "HAS": 10,
+      "WIL": 19,
+      "RB": 14,
+      "AMR": 9,
+      "SAU": 0,
+      "ALP": 9
+    }
+  },
+  "4": {
+    "raceName": "Bahrain",
+    "constructors": {
+      "MCL": 92,
+      "RBR": 46,
+      "MER": 60,
+      "FER": 73,
+      "HAS": 40,
+      "WIL": 13,
+      "RB": 22,
+      "AMR": 18,
+      "SAU": -22,
+      "ALP": 22
+    }
+  },
+  "5": {
+    "raceName": "Saudi Arabia",
+    "constructors": {
+      "MCL": 86,
+      "RBR": 21,
+      "MER": 46,
+      "FER": 64,
+      "HAS": 12,
+      "WIL": 27,
+      "RB": 18,
+      "AMR": 11,
+      "SAU": 10,
+      "ALP": -6
+    }
+  },
+  "8": {
+    "raceName": "Monaco",
+    "constructors": {
+      "MCL": 83,
+      "RBR": 23,
+      "MER": 9,
+      "FER": 71,
+      "HAS": 25,
+      "WIL": 16,
+      "RB": 31,
+      "AMR": -4,
+      "SAU": 7,
+      "ALP": -11
+    }
+  },
+  "9": {
+    "raceName": "Spain",
+    "constructors": {
+      "MCL": 88,
+      "RBR": 28,
+      "MER": 24,
+      "FER": 61,
+      "HAS": 6,
+      "WIL": -8,
+      "RB": 35,
+      "AMR": 1,
+      "SAU": 52,
+      "ALP": 31
+    }
+  },
+  "10": {
+    "raceName": "Canada",
+    "constructors": {
+      "MCL": 40,
+      "RBR": 51,
+      "MER": 87,
+      "FER": 57,
+      "HAS": 22,
+      "WIL": 4,
+      "RB": -4,
+      "AMR": 31,
+      "SAU": 26,
+      "ALP": 11
+    }
+  },
+  "11": {
+    "raceName": "Austria",
+    "constructors": {
+      "MCL": 100,
+      "RBR": 1,
+      "MER": 19,
+      "FER": 67,
+      "HAS": 37,
+      "WIL": -36,
+      "RB": 34,
+      "AMR": 24,
+      "SAU": 45,
+      "ALP": 17
+    }
+  },
+  "12": {
+    "raceName": "United Kingdom",
+    "constructors": {
+      "MCL": 90,
+      "RBR": 41,
+      "MER": 7,
+      "FER": 41,
+      "HAS": 25,
+      "WIL": 16,
+      "RB": -35,
+      "AMR": 33,
+      "SAU": 14,
+      "ALP": 5
+    }
+  },
+  "13": {
+    "raceName": "Belgium",
+    "constructors": {
+      "MCL": 93,
+      "RBR": 55,
+      "MER": 50,
+      "FER": 70,
+      "HAS": 15,
+      "WIL": 27,
+      "RB": 17,
+      "AMR": 20,
+      "SAU": 24,
+      "ALP": -13
+    }
+  },
+  "14": {
+    "raceName": "Hungary",
+    "constructors": {
+      "MCL": 100,
+      "RBR": 39,
+      "MER": 54,
+      "FER": 39,
+      "HAS": -9,
+      "WIL": 24,
+      "RB": 29,
+      "AMR": 45,
+      "SAU": 35,
+      "ALP": 2
+    }
+  },
+  "15": {
+    "raceName": "Netherlands",
+    "constructors": {
+      "MCL": 52,
+      "RBR": 47,
+      "MER": 30,
+      "FER": -4,
+      "HAS": 43,
+      "WIL": 35,
+      "RB": 38,
+      "AMR": 41,
+      "SAU": 14,
+      "ALP": 14
+    }
+  }
+}

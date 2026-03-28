@@ -1,0 +1,111 @@
+{
+  "extractedAt": "2026-03-11T05:25:50.235Z",
+  "totalDrivers": 0,
+  "totalConstructors": 11,
+  "teamSwapDrivers": 0,
+  "totalRaces": 22,
+  "averagePercentagePicked": 0,
+  "averageConstructorPercentagePicked": 18,
+  "drivers": [],
+  "constructors": [
+    {
+      "abbreviation": "MER",
+      "name": "mercedes",
+      "position": 1,
+      "value": "29.6M",
+      "seasonTotal": 96,
+      "percentagePicked": 27,
+      "racesFound": 2
+    },
+    {
+      "abbreviation": "FER",
+      "name": "ferrari",
+      "position": 2,
+      "value": "23.6M",
+      "seasonTotal": 69,
+      "percentagePicked": 41,
+      "racesFound": 2
+    },
+    {
+      "abbreviation": "RBR",
+      "name": "red bullracing",
+      "position": 3,
+      "value": "28.5M",
+      "seasonTotal": 42,
+      "percentagePicked": 9,
+      "racesFound": 2
+    },
+    {
+      "abbreviation": "RB",
+      "name": "racingbulls",
+      "position": 4,
+      "value": "6.9M",
+      "seasonTotal": 35,
+      "percentagePicked": 28,
+      "racesFound": 2
+    },
+    {
+      "abbreviation": "HAA",
+      "name": "haas f1team",
+      "position": 5,
+      "value": "8M",
+      "seasonTotal": 34,
+      "percentagePicked": 30,
+      "racesFound": 2
+    },
+    {
+      "abbreviation": "ALP",
+      "name": "alpine",
+      "position": 6,
+      "value": "13.1M",
+      "seasonTotal": 22,
+      "percentagePicked": 6,
+      "racesFound": 2
+    },
+    {
+      "abbreviation": "WIL",
+      "name": "williams",
+      "position": 7,
+      "value": "12.6M",
+      "seasonTotal": 20,
+      "percentagePicked": 14,
+      "racesFound": 2
+    },
+    {
+      "abbreviation": "MCL",
+      "name": "mclaren",
+      "position": 8,
+      "value": "28.8M",
+      "seasonTotal": 19,
+      "percentagePicked": 13,
+      "racesFound": 2
+    },
+    {
+      "abbreviation": "AUD",
+      "name": "audi",
+      "position": 9,
+      "value": "6M",
+      "seasonTotal": 0,
+      "percentagePicked": 20,
+      "racesFound": 2
+    },
+    {
+      "abbreviation": "CAD",
+      "name": "cadillac",
+      "position": 10,
+      "value": "5.4M",
+      "seasonTotal": 0,
+      "percentagePicked": 9,
+      "racesFound": 2
+    },
+    {
+      "abbreviation": "AMR",
+      "name": "astonmartin",
+      "position": 11,
+      "value": "9.7M",
+      "seasonTotal": 0,
+      "percentagePicked": 3,
+      "racesFound": 2
+    }
+  ]
+}

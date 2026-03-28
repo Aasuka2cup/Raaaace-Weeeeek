@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Update data/fallback_prices.json from thirdparty/fantasy-data/latest.
+Update data/fallback_prices.json from data/fantasy-data/latest.
 
 Reads driver_data/*.json and constructor_data/*.json, extracts prices (value field),
 and writes an updated fallback_prices.json with correct prices and team mappings.
@@ -177,12 +177,12 @@ def load_constructors(data_dir: Path) -> list[dict]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Update fallback_prices.json from fantasy-data/latest"
+        description="Update fallback_prices.json from data/fantasy-data/latest"
     )
     parser.add_argument(
         "--data-dir",
         type=Path,
-        default=Path(__file__).resolve().parent.parent / "thirdparty" / "fantasy-data" / "latest",
+        default=Path(__file__).resolve().parent.parent / "data" / "fantasy-data" / "latest",
         help="Path to fantasy-data directory (e.g. .../latest or .../2026)",
     )
     parser.add_argument(
@@ -224,7 +224,7 @@ def main() -> int:
         print("Warning: no constructor data found", file=sys.stderr)
 
     result = {
-        "_comment": "Updated from thirdparty/fantasy-data/latest (f1fantasytools.com)",
+        "_comment": "Updated from data/fantasy-data/latest (f1fantasytools.com)",
         "drivers": drivers,
         "constructors": constructors,
     }

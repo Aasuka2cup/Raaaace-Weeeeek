@@ -1,0 +1,470 @@
+{
+  "driverId": "yukitsunodadriver",
+  "name": "yukitsunodadriver",
+  "displayName": "yukitsunoda",
+  "abbreviation": "TSU",
+  "team": "Red Bull Racing",
+  "position": 10,
+  "value": "11.4M",
+  "percentagePicked": 6,
+  "teamSwap": true,
+  "teams": [
+    "Red Bull Racing",
+    "Racing Bulls"
+  ],
+  "teamSwapDetails": [
+    {
+      "team": "Red Bull Racing",
+      "position": 10,
+      "value": "11.4M",
+      "points": 155
+    },
+    {
+      "team": "Racing Bulls",
+      "position": 20,
+      "value": "8.4M",
+      "points": 6
+    }
+  ],
+  "seasonTotalPoints": 161,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 0,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 1,
+        "positionsGained": 0,
+        "positionsLost": -7,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 6,
+        "disqualificationPenalty": 0
+      },
+      "team": "Racing Bulls",
+      "source": "single"
+    },
+    {
+      "round": "10",
+      "raceName": "Canada",
+      "totalPoints": 12,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 6,
+        "positionsGained": 6,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "11",
+      "raceName": "Austria",
+      "totalPoints": 6,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 4,
+        "positionsGained": 2,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "12",
+      "raceName": "United Kingdom",
+      "totalPoints": 0,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 4,
+        "positionsGained": 0,
+        "positionsLost": -4,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "13",
+      "raceName": "Belgium",
+      "totalPoints": 0,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 1,
+        "positionsGained": 0,
+        "positionsLost": -6,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 4,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 1,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "14",
+      "raceName": "Hungary",
+      "totalPoints": 3,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 3,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "15",
+      "raceName": "Netherlands",
+      "totalPoints": 11,
+      "race": {
+        "dotd": 0,
+        "position": 2,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 6,
+        "positionsGained": 3,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "16",
+      "raceName": "Italy",
+      "totalPoints": 9,
+      "race": {
+        "dotd": 0,
+        "position": 1,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 3,
+        "positionsGained": 10,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "17",
+      "raceName": "Azerbaijan",
+      "totalPoints": 15,
+      "race": {
+        "dotd": 0,
+        "position": 8,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 2,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 5,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "18",
+      "raceName": "Singapore",
+      "totalPoints": 4,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 3,
+        "positionsGained": 1,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 6,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 4,
+        "positionsGained": 0,
+        "positionsLost": -7,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 2,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 3,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 2,
+        "positionsGained": 2,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Racing Bulls",
+      "source": "single"
+    },
+    {
+      "round": "20",
+      "raceName": "Mexico",
+      "totalPoints": 3,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 4,
+        "positionsGained": 0,
+        "positionsLost": -1,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "21",
+      "raceName": "Brazil",
+      "totalPoints": 11,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 5,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 6,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "22",
+      "raceName": "United States",
+      "totalPoints": 37,
+      "race": {
+        "dotd": 0,
+        "position": 6,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 4,
+        "positionsGained": 6,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 2,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 8,
+        "positionsGained": 11,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "conflict-resolved",
+      "conflictWith": "Red Bull Racing"
+    },
+    {
+      "round": "3",
+      "raceName": "Japan",
+      "totalPoints": 13,
+      "race": {
+        "dotd": 10,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 1,
+        "positionsGained": 2,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "4",
+      "raceName": "Bahrain",
+      "totalPoints": 9,
+      "race": {
+        "dotd": 0,
+        "position": 2,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 5,
+        "positionsGained": 1,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 1,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "5",
+      "raceName": "Saudi Arabia",
+      "totalPoints": -17,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 3,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "8",
+      "raceName": "Monaco",
+      "totalPoints": -5,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": -5,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    },
+    {
+      "round": "9",
+      "raceName": "Spain",
+      "totalPoints": 11,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 5,
+        "positionsGained": 6,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "team": "Red Bull Racing",
+      "source": "single"
+    }
+  ],
+  "extractedAt": "2025-11-19T13:40:36.462Z",
+  "versions": 2
+}

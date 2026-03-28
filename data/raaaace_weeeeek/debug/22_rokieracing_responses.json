@@ -1,0 +1,239 @@
+{
+  "rank": 22,
+  "teamName": "rokieracing",
+  "manager": "rokieracing",
+  "totalResponses": 3,
+  "responses": [
+    {
+      "url": "https://fantasy.formula1.com/services/user/opponentteam/opponentgamedayget/1/285f54b2-1c12-11f1-8c45-270a22e61f43-0-232680922/3?buster=1774673170932",
+      "status": 200,
+      "payload": {
+        "Data": {
+          "Value": {
+            "ftMdid": 2,
+            "ftGdid": 3,
+            "CuGdid": 6,
+            "mdDetails": {
+              "2": {
+                "mds": 3,
+                "phId": 1,
+                "pts": 321
+              }
+            },
+            "teamCount": 3,
+            "lastDaygdid": 0,
+            "isLastday": 0,
+            "isWildcardtaken": 0,
+            "wildCardtakengd": 0,
+            "isLimitlesstaken": 0,
+            "limitLesstakengd": 0,
+            "isFinalfixtaken": 0,
+            "finalFixtakengd": 0,
+            "isExtradrstaken": 0,
+            "extraDrstakengd": 0,
+            "isNonigativetaken": 0,
+            "noNigativetakengd": 0,
+            "isAutopilottaken": 0,
+            "isAutopilottakengd": 0,
+            "islateonboard": 0
+          },
+          "FeedTime": {
+            "UTCTime": "3/28/2026 4:46:20 AM",
+            "ISTTime": "3/28/2026 10:16:20 AM",
+            "CESTTime": "3/28/2026 5:46:20 AM"
+          }
+        },
+        "Meta": {
+          "Message": "cf_user_opponent_gameday_get",
+          "RetVal": 1,
+          "Success": true,
+          "Timestamp": {
+            "UTCTime": "3/28/2026 4:46:20 AM",
+            "ISTTime": "3/28/2026 10:16:20 AM",
+            "CESTTime": "3/28/2026 5:46:20 AM"
+          },
+          "StatusCode": 200,
+          "Maintenance": ""
+        }
+      }
+    },
+    {
+      "url": "https://fantasy.formula1.com/services/user/opponentteam/opponentgamedayplayerteamget/1/285f54b2-1c12-11f1-8c45-270a22e61f43-0-232680922/3/2/1?buster=1774673170932",
+      "status": 200,
+      "payload": {
+        "Data": {
+          "Value": {
+            "mdid": 2,
+            "userTeam": [
+              {
+                "gdrank": 649018,
+                "ovrank": 1326439,
+                "teamno": 3,
+                "teambal": 10.7,
+                "teamval": 89.3,
+                "gdpoints": 321,
+                "matchday": 3,
+                "ovpoints": 321,
+                "playerid": [
+                  {
+                    "id": "28",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 7
+                  },
+                  {
+                    "id": "11031",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 5
+                  },
+                  {
+                    "id": "118",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 1
+                  },
+                  {
+                    "id": "11051",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 4
+                  },
+                  {
+                    "id": "25",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 6
+                  },
+                  {
+                    "id": "11149",
+                    "isfinal": 0,
+                    "iscaptain": 0,
+                    "ismgcaptain": 0,
+                    "playerpostion": 3
+                  },
+                  {
+                    "id": "11059",
+                    "isfinal": 0,
+                    "iscaptain": 1,
+                    "ismgcaptain": 0,
+                    "playerpostion": 2
+                  }
+                ],
+                "socialId": 232680922,
+                "teamname": "rokieracing",
+                "usersubs": 0,
+                "boosterid": null,
+                "team_info": {
+                  "teamBal": 10.7,
+                  "teamVal": 89.3,
+                  "maxTeambal": 100,
+                  "subsallowed": 0,
+                  "userSubsleft": 0
+                },
+                "fttourgdid": 2,
+                "fttourmdid": 3,
+                "iswildcard": null,
+                "maxteambal": 100,
+                "capplayerid": "11059",
+                "subsallowed": 0,
+                "isaccounting": 0,
+                "usersubsleft": 0,
+                "extrasubscost": 10,
+                "islateonboard": 0,
+                "mgcapplayerid": null,
+                "race_category": "S",
+                "finalfxracecat": null,
+                "finalfxraceday": null,
+                "isboostertaken": 0,
+                "extradrstakengd": null,
+                "finalfixtakengd": null,
+                "isextradrstaken": 0,
+                "isfinalfixtaken": 0,
+                "iswildcardtaken": 0,
+                "wildcardtakengd": 0,
+                "autopilottakengd": null,
+                "isautopilottaken": 0,
+                "islimitlesstaken": 0,
+                "limitlesstakengd": null,
+                "isnonigativetaken": 0,
+                "nonigativetakengd": null,
+                "finalfxnewplayerid": null,
+                "finalfxoldplayerid": null,
+                "player_swap_details": null,
+                "is_wildcard_taken_gd_id": null,
+                "inactive_driver_penality_points": 0
+              }
+            ],
+            "retval": 1
+          },
+          "FeedTime": {
+            "UTCTime": "3/28/2026 4:46:20 AM",
+            "ISTTime": "3/28/2026 10:16:20 AM",
+            "CESTTime": "3/28/2026 5:46:20 AM"
+          }
+        },
+        "Meta": {
+          "Message": "cf_user_team_gameday_player_opponent_get",
+          "RetVal": 1,
+          "Success": true,
+          "Timestamp": {
+            "UTCTime": "3/28/2026 4:46:20 AM",
+            "ISTTime": "3/28/2026 10:16:20 AM",
+            "CESTTime": "3/28/2026 5:46:20 AM"
+          },
+          "StatusCode": 200,
+          "Maintenance": ""
+        }
+      }
+    },
+    {
+      "url": "https://fantasy.formula1.com/feeds/live/mixapi.json?buster=1774673180904",
+      "status": 200,
+      "payload": {
+        "Value": {
+          "infoflag": 1,
+          "ov": "20260328043113",
+          "hv": "20260328043113",
+          "lv": null,
+          "conf": {
+            "bv": "1.3",
+            "ipe": true,
+            "teamkillswitch": {
+              "web": 1,
+              "ios": 1,
+              "android": 1
+            },
+            "leaguekillswitch": {
+              "web": 1,
+              "ios": 1,
+              "android": 1
+            },
+            "eosoff": 0
+          },
+          "Maintenance": "",
+          "isLive": 0,
+          "feedBuster": {
+            "config": "20260326110331",
+            "statistics": "20260328043105",
+            "translation": "20260326110331",
+            "staticPage": "20260326110331",
+            "fixtures": "20260326110331",
+            "announcement": "20260326110331",
+            "genericCard": "20260328043113"
+          }
+        },
+        "FeedTime": {
+          "UTCTime": "3/28/2026 4:31:13 AM",
+          "ISTTime": "3/28/2026 10:01:13 AM",
+          "CESTTime": "3/28/2026 5:31:13 AM"
+        }
+      }
+    }
+  ]
+}

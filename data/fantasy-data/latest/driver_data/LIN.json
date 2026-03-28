@@ -1,0 +1,62 @@
+{
+  "driverId": "arvidlindbladdriver",
+  "name": "arvidlindbladdriver",
+  "displayName": "arvidlindblad",
+  "abbreviation": "LIN",
+  "team": "Racing Bulls",
+  "position": 8,
+  "value": "6.8M",
+  "seasonTotalPoints": 15,
+  "percentagePicked": 42,
+  "isInactive": false,
+  "races": [
+    {
+      "round": "1",
+      "raceName": "Australia",
+      "totalPoints": 15,
+      "race": {
+        "dotd": 0,
+        "position": 4,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 8,
+        "positionsGained": 1,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 2,
+        "disqualificationPenalty": 0
+      }
+    },
+    {
+      "round": "2",
+      "raceName": "China",
+      "totalPoints": 0,
+      "race": {
+        "dotd": 0,
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      },
+      "qualifying": {
+        "position": 0,
+        "disqualificationPenalty": 0
+      },
+      "sprint": {
+        "position": 0,
+        "qualifyingPosition": 0,
+        "fastestLap": 0,
+        "overtakeBonus": 0,
+        "positionsGained": 0,
+        "positionsLost": 0,
+        "disqualificationPenalty": 0
+      }
+    }
+  ],
+  "extractedAt": "2026-03-11T05:18:20.521Z"
+}
