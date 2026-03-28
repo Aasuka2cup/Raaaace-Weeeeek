@@ -225,6 +225,7 @@ Notes:
 
 - The scraper prefers local `Chrome` by default.
 - It reuses a persistent browser profile stored in `data/playwright-fantasy-profile`.
+- That profile directory is treated as local machine state and is not tracked in git.
 - The first time, log in manually in the opened browser window.
 - Later runs can usually reuse the saved session.
 
