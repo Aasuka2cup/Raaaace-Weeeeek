@@ -260,6 +260,7 @@ Examples:
 When debug artifacts are captured, they are written under:
 
 - `data/raaaace_weeeeek/debug/`
+- Debug artifacts are local troubleshooting output and are not tracked in git.
 
 ### Output field examples
 
