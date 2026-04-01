@@ -55,6 +55,19 @@ const PLAYER_ID_NAME_MAP = {
     '11149': 'Arvid Lindblad',
     '11161': 'Kimi Antonelli',
 };
+const CONSTRUCTOR_ID_NAME_MAP = {
+    '23': 'Alpine',
+    '24': 'Aston Martin',
+    '25': 'Ferrari',
+    '26': 'Haas',
+    '27': 'McLaren',
+    '28': 'Mercedes',
+    '29': 'Red Bull',
+    '210': 'Williams',
+    '2636': 'Racing Bulls',
+    '2640': 'Audi',
+    '2641': 'Cadillac',
+};
 const CHROME_EXECUTABLE_CANDIDATES = [
     '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     '/Applications/Google Chrome Beta.app/Contents/MacOS/Google Chrome Beta',
@@ -261,13 +274,34 @@ function mergeTransferInfo(baseTransferInfo = null, nextTransferInfo = null) {
     });
 }
 
-function buildTeamDataFromLineup({ teamName, manager, drivers, constructors, totalPoints = null, costCap = '', limitless = false, turboDriver = null, chipInfo = null, transferInfo = null }) {
+function buildTeamDataFromLineup({
+    teamName,
+    manager,
+    drivers,
+    constructors,
+    totalPoints = null,
+    costCap = '',
+    limitless = false,
+    turboDriver = null,
+    chipInfo = null,
+    transferInfo = null,
+    managerTeamNumber = null,
+    managerTeamCount = null,
+    socialId = null,
+}) {
     const normalizedTurbo = normalizeName(turboDriver);
     const chips = mergeChipInfo({ limitless }, chipInfo);
     const transfer = buildTransferInfo(transferInfo || {});
+    const teamNumber = normalizeTransferCount(managerTeamNumber);
+    const teamCount = normalizeTransferCount(managerTeamCount);
+    const normalizedSocialId = normalizeTransferCount(socialId);
     return {
         teamName: teamName || 'Unknown Team',
         manager: manager || '',
+        managerTeamNumber: teamNumber,
+        managerTeamCount: teamCount,
+        managerTeamLabel: teamNumber !== null ? `T${teamNumber}` : null,
+        socialId: normalizedSocialId,
         totalPoints,
         costCap,
         limitless: chips.limitless,
@@ -297,6 +331,8 @@ function buildTeamDataFromLineup({ teamName, manager, drivers, constructors, tot
 }
 
 function buildTeamResult(teamData, rank, selectedRaceName) {
+    const normalizedDrivers = (teamData.drivers || []).slice(0, 5);
+    const normalizedConstructors = (teamData.constructors || []).slice(0, 2);
     const chips = mergeChipInfo(
         { limitless: teamData.limitless },
         teamData.chips || {
@@ -319,7 +355,15 @@ function buildTeamResult(teamData, rank, selectedRaceName) {
         rank,
         teamName: teamData.teamName,
         manager: teamData.manager,
-        lineup: buildLineup(teamData),
+        managerTeamNumber: teamData.managerTeamNumber ?? null,
+        managerTeamCount: teamData.managerTeamCount ?? null,
+        managerTeamLabel: teamData.managerTeamLabel ?? null,
+        socialId: teamData.socialId ?? null,
+        lineup: buildLineup({
+            ...teamData,
+            drivers: normalizedDrivers,
+            constructors: normalizedConstructors,
+        }),
         totalPoints: teamData.totalPoints,
         costCap: teamData.costCap,
         limitless: chips.limitless,
@@ -329,8 +373,8 @@ function buildTeamResult(teamData, rank, selectedRaceName) {
         x3BoostDriver: chips.x3BoostDriver,
         excessTransfers: transfer.excess,
         transfer,
-        drivers: teamData.drivers,
-        constructors: teamData.constructors,
+        drivers: normalizedDrivers,
+        constructors: normalizedConstructors,
         selectedRace: {
             race: selectedRaceName || null,
             totalPoints: teamData.totalPoints,
@@ -339,8 +383,8 @@ function buildTeamResult(teamData, rank, selectedRaceName) {
             x3BoostDriver: chips.x3BoostDriver,
             excessTransfers: transfer.excess,
             transfer,
-            drivers: teamData.drivers,
-            constructors: teamData.constructors,
+            drivers: normalizedDrivers,
+            constructors: normalizedConstructors,
         },
     };
     if (teamData.__networkDebug) {
@@ -396,6 +440,22 @@ function applyChipInfoToTeamResult(teamResult, chipInfo) {
     return teamResult;
 }
 
+function applySelectedRaceChipInfoToTeamResult(teamResult, chipInfo) {
+    if (!teamResult?.selectedRace || !chipInfo) {
+        return teamResult;
+    }
+
+    const selectedRaceChips = buildChipInfo(chipInfo);
+    teamResult.selectedRace = {
+        ...teamResult.selectedRace,
+        chip: selectedRaceChips.used.length === 1 ? selectedRaceChips.used[0] : null,
+        chips: selectedRaceChips,
+        x3BoostDriver: selectedRaceChips.x3BoostDriver,
+    };
+
+    return teamResult;
+}
+
 function applyTransferInfoToTeamResult(teamResult, transferInfo) {
     if (!teamResult || !transferInfo) {
         return teamResult;
@@ -423,22 +483,63 @@ function harmonizeTeamResultWithRow(teamResult, expectedTeamName = '', fallbackM
 
     const expected = normalizeName(expectedTeamName);
     const actual = normalizeName(teamResult.teamName);
+    const actualIsUnknown = !actual || actual === normalizeName('Unknown Team');
+    const exactNetworkPayload = Boolean(teamResult.__networkDebug?.exactTeamPayload);
     const fallbackManagerNormalized = normalizeName(fallbackManager);
     const actualManagerNormalized = normalizeName(teamResult.manager);
     const pointsMatch = fallbackPoints !== null
         && teamResult.totalPoints !== null
         && Number(teamResult.totalPoints) === Number(fallbackPoints);
+    const missingFallbackPoints = fallbackPoints === null || fallbackPoints === undefined;
+    const staleZeroPointDetail = fallbackPoints !== null
+        && Number(fallbackPoints) > 0
+        && teamResult.totalPoints !== null
+        && Number(teamResult.totalPoints) === 0;
 
     const teamMatches = !expected || actual.includes(expected) || expected.includes(actual);
     const managerMatches = !!fallbackManagerNormalized && fallbackManagerNormalized === actualManagerNormalized;
 
-    if (!teamMatches && !managerMatches && !pointsMatch) {
+    if (staleZeroPointDetail && !pointsMatch) {
+        return null;
+    }
+
+    if (
+        expected
+        && !teamMatches
+        && !actualIsUnknown
+        && !(exactNetworkPayload && (pointsMatch || missingFallbackPoints))
+    ) {
+        return null;
+    }
+
+    // A direct userTeam payload captured right after this row click is the
+    // strongest signal we have, even if the leaderboard pre-read label/manager
+    // is imperfect for renamed teams.
+    if (!teamMatches && !managerMatches && !pointsMatch && !exactNetworkPayload) {
         return null;
     }
 
     const harmonized = { ...teamResult };
 
-    if (expectedTeamName && normalizeName(expectedTeamName) !== normalizeName(teamResult.teamName)) {
+    if (
+        fallbackPoints !== null
+        && harmonized.totalPoints !== null
+        && Math.abs(Number(harmonized.totalPoints)) === Math.abs(Number(fallbackPoints))
+        && Number(harmonized.totalPoints) !== Number(fallbackPoints)
+    ) {
+        harmonized.totalPoints = Number(fallbackPoints);
+        if (harmonized.selectedRace) {
+            harmonized.selectedRace = {
+                ...harmonized.selectedRace,
+                totalPoints: Number(fallbackPoints),
+            };
+        }
+    }
+
+    if (
+        expectedTeamName
+        && normalizeName(expectedTeamName) !== normalizeName(teamResult.teamName)
+    ) {
         harmonized.detailTeamName = teamResult.teamName;
         harmonized.teamName = expectedTeamName;
     }
@@ -572,6 +673,27 @@ function walkJsonCandidates(value, visit, state = { seen: new WeakSet(), count: 
     }
 }
 
+function decodeExtractedString(value) {
+    if (typeof value !== 'string') {
+        return '';
+    }
+
+    const trimmed = value.trim();
+    if (!trimmed) {
+        return '';
+    }
+
+    if (!/%[0-9a-f]{2}/i.test(trimmed) && !trimmed.includes('+')) {
+        return trimmed;
+    }
+
+    try {
+        return decodeURIComponent(trimmed.replace(/\+/g, '%20')).trim();
+    } catch (error) {
+        return trimmed;
+    }
+}
+
 function pickStringField(node, preferredKeys) {
     if (!node || typeof node !== 'object' || Array.isArray(node)) {
         return '';
@@ -581,12 +703,42 @@ function pickStringField(node, preferredKeys) {
         if (typeof value !== 'string') continue;
         const normalizedKey = normalizeName(key);
         if (preferredKeys.some((candidate) => normalizedKey.includes(candidate))) {
-            const trimmed = value.trim();
+            const trimmed = decodeExtractedString(value);
             if (trimmed) return trimmed;
         }
     }
 
     return '';
+}
+
+function pickManagerField(node, fallbackManager = '') {
+    if (!node || typeof node !== 'object' || Array.isArray(node)) {
+        return fallbackManager || '';
+    }
+
+    const allowedKeys = new Set([
+        'manager',
+        'managername',
+        'owner',
+        'username',
+        'displayname',
+        'username',
+    ]);
+
+    for (const [key, value] of Object.entries(node)) {
+        if (typeof value !== 'string') continue;
+        const normalizedKey = normalizeName(key);
+        if (!allowedKeys.has(normalizedKey)) {
+            continue;
+        }
+
+        const trimmed = decodeExtractedString(value);
+        if (trimmed && /[a-z]/i.test(trimmed) && !/^\d+$/.test(trimmed)) {
+            return trimmed;
+        }
+    }
+
+    return fallbackManager || '';
 }
 
 function pickNumberField(node, preferredKeys) {
@@ -714,6 +866,38 @@ function mapMegaCaptainIdToDriverName(node) {
     return null;
 }
 
+function extractMappedEntriesFromPlayerIds(node, allowedPositions, idNameMap, type) {
+    if (!node || !Array.isArray(node.playerid)) {
+        return [];
+    }
+
+    return node.playerid
+        .filter((entry) => entry && allowedPositions.has(Number(entry.playerpostion)))
+        .slice()
+        .sort((a, b) => Number(a.playerpostion) - Number(b.playerpostion))
+        .map((entry) => {
+            const name = idNameMap[String(entry.id)];
+            if (!name) {
+                return null;
+            }
+
+            return {
+                name,
+                points: null,
+                turbo: type === 'driver' ? String(entry.iscaptain) === '1' : false,
+            };
+        })
+        .filter(Boolean);
+}
+
+function extractDriverEntriesFromPlayerIds(node) {
+    return extractMappedEntriesFromPlayerIds(node, new Set([1, 2, 3, 4, 5]), PLAYER_ID_NAME_MAP, 'driver');
+}
+
+function extractConstructorEntriesFromPlayerIds(node) {
+    return extractMappedEntriesFromPlayerIds(node, new Set([6, 7]), CONSTRUCTOR_ID_NAME_MAP, 'constructor');
+}
+
 function extractChipInfoFromText(text = '', x3BoostDriver = null) {
     return buildChipInfo({
         x3Boost: /\bx3\s*boost\b|\bboost\s*x3\b/i.test(text) || !!x3BoostDriver,
@@ -741,6 +925,63 @@ function extractChipInfoFromNode(node, expectedDrivers = []) {
         limitless: isTruthyChipFlag(node?.islimitlesstaken),
         finalFix: isTruthyChipFlag(node?.isfinalfixtaken),
         autopilot: isTruthyChipFlag(node?.isautopilottaken),
+    });
+}
+
+function extractCurrentMatchdayIdFromCapturedResponses(responses = []) {
+    for (const response of responses) {
+        const payload = response?.payload;
+        let currentMatchdayId = null;
+
+        walkJsonCandidates(payload, (candidate) => {
+            if (currentMatchdayId !== null || !candidate || typeof candidate !== 'object' || Array.isArray(candidate)) {
+                return;
+            }
+
+            currentMatchdayId = pickNumberField(candidate, ['mdid']);
+        });
+
+        if (currentMatchdayId !== null) {
+            return currentMatchdayId;
+        }
+    }
+
+    return null;
+}
+
+function chipMatchesSelectedRace(node, currentMatchdayId, takenDayKeys = []) {
+    if (!node || typeof node !== 'object' || currentMatchdayId === null) {
+        return false;
+    }
+
+    for (const key of takenDayKeys) {
+        const value = normalizeTransferCount(node?.[key]);
+        if (value !== null) {
+            return value === currentMatchdayId;
+        }
+    }
+
+    return false;
+}
+
+function extractSelectedRaceChipInfoFromNode(node, currentMatchdayId, expectedDrivers = []) {
+    const normalizedExpectedDrivers = new Set((expectedDrivers || []).map((driver) => normalizeName(driver?.name || driver)));
+    const megaDriverCandidate = mapMegaCaptainIdToDriverName(node);
+    const x3BoostActive = chipMatchesSelectedRace(node, currentMatchdayId, ['extradrstakengd', 'extraDrstakengd']);
+    const x3BoostDriver = x3BoostActive
+        && megaDriverCandidate
+        && (!normalizedExpectedDrivers.size || normalizedExpectedDrivers.has(normalizeName(megaDriverCandidate)))
+        ? megaDriverCandidate
+        : null;
+
+    return buildChipInfo({
+        x3Boost: x3BoostActive || !!x3BoostDriver,
+        x3BoostDriver,
+        noNegative: chipMatchesSelectedRace(node, currentMatchdayId, ['nonigativetakengd', 'noNigativetakengd']),
+        wildcard: chipMatchesSelectedRace(node, currentMatchdayId, ['wildcardtakengd', 'wildCardtakengd']),
+        limitless: chipMatchesSelectedRace(node, currentMatchdayId, ['limitlesstakengd', 'limitLesstakengd']),
+        finalFix: chipMatchesSelectedRace(node, currentMatchdayId, ['finalfixtakengd', 'finalFixtakengd']),
+        autopilot: chipMatchesSelectedRace(node, currentMatchdayId, ['autopilottakengd', 'isAutopilottakengd']),
     });
 }
 
@@ -821,6 +1062,35 @@ function extractChipInfoFromCapturedResponses(responses = [], expectedDrivers = 
     return buildChipInfo({});
 }
 
+function extractSelectedRaceChipInfoFromCapturedResponses(responses = [], expectedDrivers = []) {
+    const currentMatchdayId = extractCurrentMatchdayIdFromCapturedResponses(responses);
+    if (currentMatchdayId === null) {
+        return null;
+    }
+
+    for (const response of responses) {
+        const payload = response?.payload;
+        let chipInfo = null;
+
+        walkJsonCandidates(payload, (candidate) => {
+            if (chipInfo || !candidate || typeof candidate !== 'object' || Array.isArray(candidate)) {
+                return;
+            }
+
+            const candidateChipInfo = extractSelectedRaceChipInfoFromNode(candidate, currentMatchdayId, expectedDrivers);
+            if (candidateChipInfo.used.length > 0) {
+                chipInfo = candidateChipInfo;
+            }
+        });
+
+        if (chipInfo) {
+            return chipInfo;
+        }
+    }
+
+    return buildChipInfo({});
+}
+
 function extractTransferInfoFromCapturedResponses(responses = [], expectedDrivers = []) {
     const normalizedExpectedDrivers = new Set((expectedDrivers || []).map((driver) => normalizeName(driver?.name || driver)));
 
@@ -861,6 +1131,69 @@ function extractTransferInfoFromCapturedResponses(responses = [], expectedDriver
     }
 
     return buildTransferInfo({});
+}
+
+function extractManagerTeamInfoFromCapturedResponses(responses = []) {
+    const managerTeamInfo = {
+        managerTeamNumber: null,
+        managerTeamCount: null,
+    };
+
+    for (const response of responses) {
+        const payload = response?.payload;
+        walkJsonCandidates(payload, (candidate) => {
+            if (!candidate || typeof candidate !== 'object' || Array.isArray(candidate)) {
+                return;
+            }
+
+            if (managerTeamInfo.managerTeamNumber === null) {
+                const teamNumber = pickNumberField(candidate, ['teamno']);
+                if (teamNumber !== null) {
+                    managerTeamInfo.managerTeamNumber = teamNumber;
+                }
+            }
+
+            if (managerTeamInfo.managerTeamCount === null) {
+                const teamCount = pickNumberField(candidate, ['teamcount']);
+                if (teamCount !== null) {
+                    managerTeamInfo.managerTeamCount = teamCount;
+                }
+            }
+        });
+
+        if (
+            managerTeamInfo.managerTeamNumber !== null
+            && managerTeamInfo.managerTeamCount !== null
+        ) {
+            return managerTeamInfo;
+        }
+    }
+
+    return managerTeamInfo;
+}
+
+function extractSocialIdFromCapturedResponses(responses = []) {
+    let socialId = null;
+
+    for (const response of responses) {
+        const payload = response?.payload;
+        walkJsonCandidates(payload, (candidate) => {
+            if (socialId !== null || !candidate || typeof candidate !== 'object' || Array.isArray(candidate)) {
+                return;
+            }
+
+            const candidateSocialId = pickNumberField(candidate, ['socialid']);
+            if (candidateSocialId !== null) {
+                socialId = candidateSocialId;
+            }
+        });
+
+        if (socialId !== null) {
+            return socialId;
+        }
+    }
+
+    return socialId;
 }
 
 function extractNamedEntriesFromNode(node, allowedNames, type) {
@@ -924,73 +1257,100 @@ function extractTeamDataFromNetworkResponses(responses, rank, selectedRaceName, 
     const expected = normalizeName(expectedTeamName);
     const candidates = [];
 
-    for (const response of responses) {
-        walkJsonCandidates(response.payload, (node, depth) => {
-            let serialized = '';
-            try {
-                serialized = JSON.stringify(node);
-            } catch (error) {
-                return;
-            }
+    function buildCandidate(node, response, depth, exactTeamPayload = false) {
+        let serialized = '';
+        try {
+            serialized = JSON.stringify(node);
+        } catch (error) {
+            return null;
+        }
 
-            if (!serialized || serialized.length < 40) {
-                return;
-            }
+        if (!serialized || serialized.length < 40) {
+            return null;
+        }
 
-            const driverEntries = extractNamedEntriesFromNode(node, DRIVER_NAMES, 'driver');
-            const constructorEntries = extractNamedEntriesFromNode(node, CONSTRUCTOR_NAMES, 'constructor');
-            const drivers = driverEntries.length > 0 ? driverEntries : extractNamesInTextOrder(serialized, DRIVER_NAMES);
-            const constructors = constructorEntries.length > 0 ? constructorEntries : extractNamesInTextOrder(serialized, CONSTRUCTOR_NAMES);
-            if (drivers.length < 5 || constructors.length < 2) {
-                return;
-            }
+        const driverEntriesFromIds = extractDriverEntriesFromPlayerIds(node);
+        const constructorEntriesFromIds = extractConstructorEntriesFromPlayerIds(node);
+        const driverEntries = driverEntriesFromIds.length > 0 ? driverEntriesFromIds : extractNamedEntriesFromNode(node, DRIVER_NAMES, 'driver');
+        const constructorEntries = constructorEntriesFromIds.length > 0 ? constructorEntriesFromIds : extractNamedEntriesFromNode(node, CONSTRUCTOR_NAMES, 'constructor');
+        const drivers = driverEntries.length > 0 ? driverEntries : extractNamesInTextOrder(serialized, DRIVER_NAMES);
+        const constructors = constructorEntries.length > 0 ? constructorEntries : extractNamesInTextOrder(serialized, CONSTRUCTOR_NAMES);
+        if (drivers.length < 5 || constructors.length < 2) {
+            return null;
+        }
 
-            const teamName = pickStringField(node, ['teamname', 'entryname', 'fantasyteam', 'team', 'name', 'title']) || expectedTeamName;
-            const manager = pickStringField(node, ['manager', 'managername', 'player', 'owner', 'username']) || fallbackManager;
-            const totalPoints = pickNumberField(node, ['totalpoints', 'points', 'score']);
-            const costCapValue = pickNumberField(node, ['costcap', 'budget', 'teamvalue']);
-            const turboDriver = mapCaptainIdToDriverName(node)
-                || pickStringField(node, ['turbodriver', 'turbo', 'drsdriver'])
-                || driverEntries.find((driver) => driver.turbo)?.name
-                || null;
-            const chipInfo = mergeChipInfo(
-                extractChipInfoFromNode(node, drivers),
-                { limitless: pickBooleanField(node, ['limitless']) },
-            );
-            const transferInfo = extractTransferInfoFromNode(node);
-            const score =
-                drivers.length * 10 +
-                constructors.length * 12 +
-                (expected && serialized.toLowerCase().includes(expected) ? 50 : 0) +
-                (teamName && expected && normalizeName(teamName).includes(expected) ? 30 : 0) +
-                Math.max(0, 10 - depth) +
-                (/league|entry|team/i.test(response.url) ? 8 : 0);
+        const teamName = pickStringField(node, ['teamname', 'entryname', 'fantasyteam', 'team', 'name', 'title']) || expectedTeamName;
+        const manager = pickManagerField(node, fallbackManager);
+        const totalPoints = pickNumberField(node, ['gdpoints', 'totalpoints', 'points', 'score']);
+        const costCapValue = pickNumberField(node, ['costcap', 'budget', 'teamvalue']);
+        const turboDriver = mapCaptainIdToDriverName(node)
+            || pickStringField(node, ['turbodriver', 'turbo', 'drsdriver'])
+            || driverEntries.find((driver) => driver.turbo)?.name
+            || null;
+        const chipInfo = mergeChipInfo(
+            extractChipInfoFromNode(node, drivers),
+            { limitless: pickBooleanField(node, ['limitless']) },
+        );
+        const transferInfo = extractTransferInfoFromNode(node);
+        const normalizedTeamName = normalizeName(teamName);
+        const score =
+            drivers.length * 10 +
+            constructors.length * 12 +
+            (driverEntriesFromIds.length >= 5 ? 35 : 0) +
+            (constructorEntriesFromIds.length >= 2 ? 45 : 0) +
+            (exactTeamPayload ? 120 : 0) +
+            (expected && serialized.toLowerCase().includes(expected) ? 50 : 0) +
+            (normalizedTeamName && expected && normalizedTeamName === expected ? 80 : 0) +
+            (normalizedTeamName && expected && normalizedTeamName.includes(expected) ? 30 : 0) +
+            Math.max(0, 10 - depth) +
+            (/opponentgamedayplayerteamget/i.test(response.url) ? 40 : 0) +
+            (/league|entry|team/i.test(response.url) ? 8 : 0);
 
-            candidates.push({
-                score,
+        return {
+            score,
+            url: response.url,
+            data: buildTeamDataFromLineup({
+                teamName,
+                manager,
+                drivers,
+                constructors,
+                totalPoints,
+                costCap: costCapValue !== null ? `$${costCapValue}M` : '',
+                limitless: chipInfo.limitless,
+                turboDriver,
+                chipInfo,
+                transferInfo,
+            }),
+            debug: {
                 url: response.url,
-                data: buildTeamDataFromLineup({
-                    teamName,
-                    manager,
-                    drivers,
-                    constructors,
-                    totalPoints,
-                    costCap: costCapValue !== null ? `$${costCapValue}M` : '',
-                    limitless: chipInfo.limitless,
-                    turboDriver,
-                    chipInfo,
-                    transferInfo,
-                }),
-                debug: {
-                    url: response.url,
-                    status: response.status,
-                    score,
-                    depth,
-                    expectedTeamName,
-                    fallbackManager,
-                    rawNode: node,
-                },
-            });
+                status: response.status,
+                score,
+                depth,
+                exactTeamPayload,
+                expectedTeamName,
+                fallbackManager,
+                rawNode: node,
+            },
+        };
+    }
+
+    for (const response of responses) {
+        const directUserTeams = response?.payload?.Data?.Value?.userTeam;
+        if (Array.isArray(directUserTeams) && directUserTeams.length > 0) {
+            for (const node of directUserTeams) {
+                const candidate = buildCandidate(node, response, 1, true);
+                if (candidate) {
+                    candidates.push(candidate);
+                }
+            }
+            continue;
+        }
+
+        walkJsonCandidates(response.payload, (node, depth) => {
+            const candidate = buildCandidate(node, response, depth, false);
+            if (candidate) {
+                candidates.push(candidate);
+            }
         });
     }
 
@@ -1000,7 +1360,6 @@ function extractTeamDataFromNetworkResponses(responses, rank, selectedRaceName, 
         return null;
     }
 
-    console.log(`      🌐 Parsed lineup from network: ${best.url}`);
     best.data.__networkDebug = best.debug;
     return buildTeamResult(best.data, rank, selectedRaceName);
 }
@@ -1371,7 +1730,7 @@ async function extractTeamDataFromPopup(page, rank, selectedRaceName) {
         if (managerMatch) manager = managerMatch[1].trim();
 
         // Total points: "237 PTS" or "237 Pts"
-        const totalMatch = fullText.match(/(\d+)\s*PTS?\s*(?:$|\n)/i);
+        const totalMatch = fullText.match(/(-?\d+)\s*PTS?\s*(?:$|\n)/i);
         if (totalMatch) totalPoints = parseInt(totalMatch[1]);
 
         // Cost cap: "$0.0M" or similar
@@ -1397,14 +1756,14 @@ async function extractTeamDataFromPopup(page, rank, selectedRaceName) {
 
         for (const row of rows) {
             const text = (row.textContent || '').trim();
-            const ptsMatch = text.match(/(\d+)\s*PTS?/i);
+            const ptsMatch = text.match(/(-?\d+)\s*PTS?/i);
             const points = ptsMatch ? parseInt(ptsMatch[1]) : null;
-            const namePart = text.replace(/\d+\s*PTS?.*/i, '').replace(/\s*2X\s*/i, '').trim();
+            const namePart = text.replace(/-?\d+\s*PTS?.*/i, '').replace(/\s*2X\s*/i, '').trim();
             if (!namePart) continue;
 
             if (constructorNames.some((c) => namePart.includes(c))) {
                 const match = constructorNames.find((c) => namePart.includes(c));
-                if (match && !seenConstructors.has(match)) {
+                if (match && !seenConstructors.has(match) && constructors.length < 2) {
                     seenConstructors.add(match);
                     constructors.push({ name: match, points });
                 }
@@ -1437,7 +1796,7 @@ async function extractTeamDataFromPopup(page, rank, selectedRaceName) {
         // Final fallback: regex from full text for names + points
         if (drivers.length < 5) {
             for (const d of driverNames) {
-                const re = new RegExp(d.replace(/\s+/g, '\\s+') + '[^\\d]*(\\d+)\\s*PTS?', 'i');
+                const re = new RegExp(d.replace(/\s+/g, '\\s+') + '[^\\d-]*(-?\\d+)\\s*PTS?', 'i');
                 const m = fullText.match(re);
                 if (m && !seenDrivers.has(d)) {
                     seenDrivers.add(d);
@@ -1446,9 +1805,9 @@ async function extractTeamDataFromPopup(page, rank, selectedRaceName) {
             }
         }
         for (const c of constructorNames) {
-            const re = new RegExp(c.replace(/\s+/g, '\\s+') + '[^\\d]*(\\d+)\\s*PTS?', 'i');
+            const re = new RegExp(c.replace(/\s+/g, '\\s+') + '[^\\d-]*(-?\\d+)\\s*PTS?', 'i');
             const m = fullText.match(re);
-            if (m && !seenConstructors.has(c)) {
+            if (m && !seenConstructors.has(c) && constructors.length < 2) {
                 seenConstructors.add(c);
                 constructors.push({ name: c, points: parseInt(m[1]) });
             }
@@ -1498,7 +1857,7 @@ async function extractTeamDataFromPage(page, rank, selectedRaceName) {
         const teamNameEl = root.querySelector('.si-player__name, [class*="team__name"], h1, h2');
         if (teamNameEl) teamName = teamNameEl.textContent.trim();
 
-        const totalMatch = fullText.match(/(\d+)\s*PTS?\s*(?:$|\n)/i);
+        const totalMatch = fullText.match(/(-?\d+)\s*PTS?\s*(?:$|\n)/i);
         if (totalMatch) totalPoints = parseInt(totalMatch[1]);
 
         const costMatch = fullText.match(/\$([\d.]+)M?/);
@@ -1518,7 +1877,7 @@ async function extractTeamDataFromPage(page, rank, selectedRaceName) {
             .map((entry) => entry.name);
 
         for (const d of driverNames) {
-            const re = new RegExp(d.replace(/\s+/g, '\\s+') + '[^\\d]*(\\d+)\\s*PTS?', 'i');
+            const re = new RegExp(d.replace(/\s+/g, '\\s+') + '[^\\d-]*(-?\\d+)\\s*PTS?', 'i');
             const m = fullText.match(re);
             if (m && !seenDrivers.has(d)) {
                 seenDrivers.add(d);
@@ -1526,9 +1885,9 @@ async function extractTeamDataFromPage(page, rank, selectedRaceName) {
             }
         }
         for (const c of constructorNames) {
-            const re = new RegExp(c.replace(/\s+/g, '\\s+') + '[^\\d]*(\\d+)\\s*PTS?', 'i');
+            const re = new RegExp(c.replace(/\s+/g, '\\s+') + '[^\\d-]*(-?\\d+)\\s*PTS?', 'i');
             const m = fullText.match(re);
-            if (m && !seenConstructors.has(c)) {
+            if (m && !seenConstructors.has(c) && constructors.length < 2) {
                 seenConstructors.add(c);
                 constructors.push({ name: c, points: parseInt(m[1]) });
             }
@@ -1684,8 +2043,8 @@ async function extractTeamDataFromSidePanel(page, rank, selectedRaceName, expect
         const seenDrivers = new Set();
         const seenConstructors = new Set();
 
-        let teamName = expectedTeamName || 'Unknown Team';
-        let manager = fallbackManager || '';
+        let teamName = 'Unknown Team';
+        let manager = '';
         let totalPoints = 0;
         let costCap = '';
         let limitless = /limitless/i.test(fullText);
@@ -1693,9 +2052,14 @@ async function extractTeamDataFromSidePanel(page, rank, selectedRaceName, expect
         let x3BoostDriver = null;
 
         const titleEl = container.querySelector('.si-player__name, [class*="player__name"], [class*="team__name"], h1, h2, h3');
+        const matchingLine = expected
+            ? lines.find((line) => normalize(line) === expected)
+            : null;
         if (titleEl) {
             teamName = titleEl.textContent.trim();
-        } else if (!expectedTeamName && lines.length > 0) {
+        } else if (matchingLine) {
+            teamName = matchingLine;
+        } else if (lines.length > 0) {
             teamName = lines[0];
         }
 
@@ -1704,7 +2068,7 @@ async function extractTeamDataFromSidePanel(page, rank, selectedRaceName, expect
             manager = lines[titleIndex + 1];
         }
 
-        const totalMatch = fullText.match(/(\d+)\s*PTS?\b/i);
+        const totalMatch = fullText.match(/(-?\d+)\s*PTS?\b/i);
         if (totalMatch) {
             totalPoints = parseInt(totalMatch[1], 10);
         }
@@ -1758,7 +2122,7 @@ async function extractTeamDataFromSidePanel(page, rank, selectedRaceName, expect
             }
 
             const constructorMatch = constructorNames.find((name) => normalizedText.includes(normalize(name)));
-            if (constructorMatch && !seenConstructors.has(constructorMatch)) {
+            if (constructorMatch && !seenConstructors.has(constructorMatch) && constructors.length < 2) {
                 seenConstructors.add(constructorMatch);
                 constructors.push({ name: constructorMatch, points });
             }
@@ -1885,53 +2249,62 @@ async function sweepPageForSidePanelData(page, rank, selectedRaceName, expectedT
 
 async function waitForTeamDataAfterClick(page, rank, selectedRaceName, expectedTeamName, fallbackManager, fallbackPoints, networkCollector, trustPanelSelection = false) {
     for (let attempt = 0; attempt < 12; attempt++) {
+        const capturedResponses = networkCollector ? networkCollector.getResponses() : [];
         const networkData = harmonizeTeamResultWithRow(extractTeamDataFromNetworkResponses(
-            networkCollector ? networkCollector.getResponses() : [],
+            capturedResponses,
             rank,
             selectedRaceName,
             expectedTeamName,
             fallbackManager,
         ), expectedTeamName, fallbackManager, fallbackPoints);
         if (networkData) {
+            if (networkData.__networkDebug?.url) {
+                console.log(`      🌐 Parsed lineup from network: ${networkData.__networkDebug.url}`);
+            }
             return networkData;
+        }
+
+        // Give the row-specific opponent team response time to arrive before
+        // trusting any popup or side-panel text, which is much easier to stale-read.
+        const hasTeamPayloadResponse = capturedResponses.some((response) => /opponentgamedayplayerteamget/i.test(response?.url || ''));
+        if (attempt < 3 && !hasTeamPayloadResponse) {
+            await page.waitForTimeout(350);
+            continue;
         }
 
         const popup = await page.$('.si-popup__container');
         if (popup) {
-            return harmonizeTeamResultWithRow(
+            const popupData = harmonizeTeamResultWithRow(
                 await extractTeamDataFromPopup(page, rank, selectedRaceName),
                 expectedTeamName,
                 fallbackManager,
                 fallbackPoints,
             );
+            if (popupData) {
+                return popupData;
+            }
         }
 
         if (page.url().includes('/team/')) {
             await page.waitForSelector('.si-main__container, main', { timeout: 8000 }).catch(() => null);
-            return harmonizeTeamResultWithRow(
+            const pageData = harmonizeTeamResultWithRow(
                 await extractTeamDataFromPage(page, rank, selectedRaceName),
                 expectedTeamName,
                 fallbackManager,
                 fallbackPoints,
             );
+            if (pageData) {
+                return pageData;
+            }
         }
 
         let panelData = await extractTeamDataFromSidePanel(page, rank, selectedRaceName, expectedTeamName, fallbackManager);
-        if (trustPanelSelection && panelData) {
-            panelData = {
-                ...panelData,
-                detailTeamName: panelData.teamName,
-                teamName: expectedTeamName || panelData.teamName,
-                manager: panelData.manager || fallbackManager,
-            };
-        } else {
-            panelData = harmonizeTeamResultWithRow(
-                panelData,
-                expectedTeamName,
-                fallbackManager,
-                fallbackPoints,
-            );
-        }
+        panelData = harmonizeTeamResultWithRow(
+            panelData,
+            expectedTeamName,
+            fallbackManager,
+            fallbackPoints,
+        );
         if (panelData) {
             return panelData;
         }
@@ -1997,10 +2370,11 @@ async function findTeamRows(page) {
                     const lines = (node.innerText || '').split('\n').map((line) => line.trim()).filter(Boolean);
                     const rankSource = `${lines[0] || ''} ${text}`.trim();
                     const rankMatch = rankSource.match(/^[^\d]{0,8}(\d{1,3})\b/);
-                    const numericMatches = [...text.matchAll(/\b(\d{1,4})\b/g)].map((match) => parseInt(match[1], 10));
-                    const inferredPoints = numericMatches.length > 1
-                        ? Math.max(...numericMatches.filter((value) => Number.isFinite(value)))
-                        : null;
+                    const scoreMatch = text.match(/(-?\d+)\s*pts?\b/i);
+                    const trailingNumberMatch = !scoreMatch ? text.match(/(-?\d+)\s*$/) : null;
+                    const inferredPoints = scoreMatch
+                        ? parseInt(scoreMatch[1], 10)
+                        : (trailingNumberMatch ? parseInt(trailingNumberMatch[1], 10) : null);
                     const clickableChild = node.querySelector('button, a, [role="button"]');
                     const navAncestor = node.closest('header, nav, footer, aside');
                     const rect = node.getBoundingClientRect();
@@ -2051,19 +2425,32 @@ async function findTeamRows(page) {
                     && !/cookie preferences/i.test(metadata.text);
 
                 if (isLikelyRow) {
+                    const teamName = metadata.lines.find((line) => {
+                        const normalized = normalizeName(line);
+                        return normalized
+                            && normalized !== String(metadata.rank)
+                            && !/^(position|name|pts|team)$/.test(normalized)
+                            && !/^\d+$/.test(normalized);
+                    }) || metadata.lines[1] || metadata.lines[0] || '';
+                    const normalizedTeamName = normalizeName(teamName);
+                    const manager = metadata.lines.find((line, index) => {
+                        const normalized = normalizeName(line);
+                        return index > 0
+                            && normalized
+                            && normalized !== normalizedTeamName
+                            && normalized !== normalizeName(metadata.lines[0])
+                            && !/pts?\b/i.test(line)
+                            && !/^-?\d+(\.\d+)?$/.test(line)
+                            && /[a-z]/i.test(line);
+                    }) || '';
+
                     filtered.push({
                         element,
                         rank: metadata.rank,
                         points: metadata.points,
                         text: metadata.text,
-                        teamName: metadata.lines.find((line) => {
-                            const normalized = normalizeName(line);
-                            return normalized
-                                && normalized !== String(metadata.rank)
-                                && !/^(position|name|pts|team)$/.test(normalized)
-                                && !/^\d+$/.test(normalized);
-                        }) || metadata.lines[1] || metadata.lines[0] || '',
-                        manager: metadata.lines.find((line, index) => index > 0 && /[a-z]/i.test(line) && !/\d/.test(line) && normalizeName(line) !== normalizeName(metadata.lines[0])) || '',
+                        teamName,
+                        manager,
                         depth: metadata.depth,
                         width: metadata.width,
                     });
@@ -2220,6 +2607,10 @@ async function runScraper(page) {
                         if (chipInfoFromResponses.used.length > 0) {
                             applyChipInfoToTeamResult(teamData, chipInfoFromResponses);
                         }
+                        const selectedRaceChipInfoFromResponses = extractSelectedRaceChipInfoFromCapturedResponses(capturedResponses, teamData.drivers);
+                        if (selectedRaceChipInfoFromResponses) {
+                            applySelectedRaceChipInfoToTeamResult(teamData, selectedRaceChipInfoFromResponses);
+                        }
                         const transferInfoFromResponses = extractTransferInfoFromCapturedResponses(capturedResponses, teamData.drivers);
                         if (
                             transferInfoFromResponses.made !== null
@@ -2228,6 +2619,21 @@ async function runScraper(page) {
                             || transferInfoFromResponses.penaltyPerTransfer !== null
                         ) {
                             applyTransferInfoToTeamResult(teamData, transferInfoFromResponses);
+                        }
+                        const managerTeamInfoFromResponses = extractManagerTeamInfoFromCapturedResponses(capturedResponses);
+                        if (
+                            managerTeamInfoFromResponses.managerTeamNumber !== null
+                            || managerTeamInfoFromResponses.managerTeamCount !== null
+                        ) {
+                            teamData.managerTeamNumber = managerTeamInfoFromResponses.managerTeamNumber;
+                            teamData.managerTeamCount = managerTeamInfoFromResponses.managerTeamCount;
+                            teamData.managerTeamLabel = managerTeamInfoFromResponses.managerTeamNumber !== null
+                                ? `T${managerTeamInfoFromResponses.managerTeamNumber}`
+                                : null;
+                        }
+                        const socialIdFromResponses = extractSocialIdFromCapturedResponses(capturedResponses);
+                        if (socialIdFromResponses !== null) {
+                            teamData.socialId = socialIdFromResponses;
                         }
                         await saveCapturedResponsesArtifact({
                             rank,
@@ -2246,6 +2652,12 @@ async function runScraper(page) {
                             continue;
                         }
                     }
+
+                    await saveCapturedResponsesArtifact({
+                        rank,
+                        teamName: rowInfo.teamName,
+                        manager: rowInfo.manager,
+                    }, capturedResponses);
 
                     if (page.url().includes('/team/')) {
                         await page.goBack();

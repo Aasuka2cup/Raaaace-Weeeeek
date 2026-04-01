@@ -1,2 +1,4 @@
 data/playwright-fantasy-profile/
 data/raaaace_weeeeek/debug/
+build/
+__pycache__/

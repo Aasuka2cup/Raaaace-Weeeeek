@@ -270,6 +270,10 @@ The crawler output includes fields like:
 {
   "teamName": "THEMOSTPOINTSPOSSIBLE",
   "manager": "Minzer Teo",
+  "socialId": 232270125,
+  "managerTeamNumber": 3,
+  "managerTeamCount": 3,
+  "managerTeamLabel": "T3",
   "turboDriver": "Lewis Hamilton",
   "x3BoostDriver": "Kimi Antonelli",
   "chip": "x3 Boost",
@@ -300,7 +304,126 @@ Notes:
 
 - `chip` is only set when a single chip is clearly identified for that result.
 - `chips.used` contains the fuller chip summary extracted by the crawler.
+- `selectedRace.chip` and `selectedRace.chips` are intended to reflect the chip used in the currently selected grand prix view when the response timing data is available.
 - `excessTransfers` is a convenience field equal to `transfer.excess`.
+
+### Exporting data for a separate web repo
+
+If you keep the website in a separate repository, this repo can act as the data producer.
+
+Reference docs:
+
+- `docs/league-site-data-contract.md`
+- `docs/website-repo-integration.md`
+
+Recommended flow:
+
+1. Run the crawler locally and refresh the league JSON snapshot files.
+2. Validate the generated JSON files.
+3. Export a stable site-facing data package with a manifest.
+4. Publish that exported package into the web repo, where Netlify deploys it as static assets.
+
+Important:
+
+- The GitHub Actions workflow in this repo does **not** run the login-dependent crawler.
+- It only validates and publishes already-generated JSON files that are committed to this repo.
+- This avoids trying to automate browser login inside CI.
+
+#### Validate local data
+
+```bash
+python scripts/validate_league_results.py
+```
+
+The validator auto-detects league JSON files from `data/league-results/` or `data/raaaace_weeeeek/`.
+
+#### Export a web-consumable package
+
+```bash
+python scripts/export_league_site_data.py
+```
+
+Default output:
+
+- `build/league-site-data/manifests/league-index.json`
+- `build/league-site-data/leagues/league_<league_id>/views/<view>.json`
+- `build/league-site-data/leagues/league_<league_id>/insights/<view>.json`
+
+The export step adds stable metadata such as:
+
+- `schemaVersion`
+- `leagueId`
+- `viewKey`
+- `viewLabel`
+- `teamCount`
+- `exportedAt`
+- precomputed ownership, grouping, and heuristic prediction insights
+
+Validate the exported package contract:
+
+```bash
+python scripts/validate_league_site_package.py
+```
+
+This checks the manifest, verifies that referenced view files exist, and validates the exported website-facing JSON shape.
+
+#### GitHub Actions publish workflow
+
+This repo includes:
+
+- `.github/workflows/publish-league-site-data.yml`
+
+What it does:
+
+1. Validates the committed league JSON files.
+2. Exports them into a stable data package.
+3. Validates the exported site package contract.
+4. Checks out your separate web repo.
+5. Copies the exported package into the web repo.
+6. Commits and pushes only the static data update.
+7. Lets Netlify deploy from the web repo as usual.
+
+#### Required GitHub configuration
+
+Set these in the analysis repo before using the publish workflow:
+
+- Repository secret: `WEB_REPO_PUSH_TOKEN`
+  - Fine-grained token with write access to the web repo contents
+- Repository variable: `WEB_REPO_NAME`
+  - Example: `your-user/your-web-repo`
+- Optional repository variable: `WEB_REPO_DATA_PATH`
+  - Default: `public/data/league-data`
+
+#### Suggested site repo structure
+
+The workflow is designed for the web repo to consume static files, for example:
+
+```text
+public/
+  data/
+    league-data/
+      manifests/
+        league-index.json
+      leagues/
+        league_871710/
+          insights/
+            overall.json
+            chinese-grand-prix.json
+          views/
+            overall.json
+            chinese-grand-prix.json
+```
+
+The frontend can then:
+
+1. Fetch `league-index.json`
+2. Resolve the available league views and optional `insightFile`
+3. Fetch the selected snapshot JSON dynamically
+4. Use the sibling insights JSON for precomputed distribution and prediction panels
+
+This keeps the analysis repo responsible for data generation and the web repo responsible for presentation and Netlify deployment.
+
+If you are building the separate website repo next, use `docs/website-repo-integration.md` as the handoff guide and `docs/league-site-data-contract.md` as the stable data contract.
 
 ## Updating Fallback Prices
 
@@ -332,9 +455,13 @@ F1-Fantasy-Strategist/
 ├── data/
 │   ├── fallback_prices.json
 │   └── fantasy-data/    # Local fantasy-data snapshots (e.g. 2025/, latest/)
+├── docs/
+│   ├── league-site-data-contract.md
+│   └── website-repo-integration.md
 ├── scripts/
 │   ├── fantasy_scraper_league.js
 │   ├── league_crawler.py
+│   ├── validate_league_site_package.py
 │   └── package.json     # Playwright dependency for crawler tooling
 └── requirements.txt
 ```

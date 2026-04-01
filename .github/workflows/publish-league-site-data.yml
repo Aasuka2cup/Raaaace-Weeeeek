@@ -1,0 +1,127 @@
+name: Publish League Site Data
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/raaaace_weeeeek/league_*.json"
+      - "data/league-results/league_*.json"
+      - "scripts/export_league_site_data.py"
+      - "scripts/validate_league_results.py"
+      - "scripts/validate_league_site_package.py"
+      - "scripts/league_data_contract.py"
+      - ".github/workflows/publish-league-site-data.yml"
+
+concurrency:
+  group: publish-league-site-data-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Validate workflow configuration
+        env:
+          WEB_REPO_NAME: ${{ vars.WEB_REPO_NAME }}
+          WEB_REPO_DATA_PATH: ${{ vars.WEB_REPO_DATA_PATH }}
+          WEB_REPO_PUSH_TOKEN: ${{ secrets.WEB_REPO_PUSH_TOKEN }}
+        run: |
+          if [ -z "$WEB_REPO_NAME" ]; then
+            echo "Missing repository variable WEB_REPO_NAME" >&2
+            exit 1
+          fi
+          if [ -z "$WEB_REPO_PUSH_TOKEN" ]; then
+            echo "Missing secret WEB_REPO_PUSH_TOKEN" >&2
+            exit 1
+          fi
+          if [ -z "$WEB_REPO_DATA_PATH" ]; then
+            echo "WEB_REPO_DATA_PATH not set; defaulting to public/data/league-data"
+          fi
+
+      - name: Checkout analysis repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate league JSON
+        run: python3 "scripts/validate_league_results.py"
+
+      - name: Export web data package
+        run: |
+          python3 "scripts/export_league_site_data.py" \
+            --output-dir "build/league-site-data" \
+            --source-repo "$GITHUB_REPOSITORY" \
+            --source-commit "$GITHUB_SHA"
+
+      - name: Validate exported site data package
+        run: |
+          python3 "scripts/validate_league_site_package.py" \
+            --site-data-dir "build/league-site-data"
+
+      - name: Checkout web repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.WEB_REPO_NAME }}
+          token: ${{ secrets.WEB_REPO_PUSH_TOKEN }}
+          path: web-repo
+
+      - name: Sync exported data into web repo
+        env:
+          WEB_REPO_DATA_PATH: ${{ vars.WEB_REPO_DATA_PATH }}
+        run: |
+          TARGET_DATA_PATH="${WEB_REPO_DATA_PATH:-public/data/league-data}"
+          rm -rf "web-repo/$TARGET_DATA_PATH"
+          mkdir -p "web-repo/$TARGET_DATA_PATH"
+          rsync -a --delete "build/league-site-data/" "web-repo/$TARGET_DATA_PATH/"
+          echo "TARGET_DATA_PATH=$TARGET_DATA_PATH" >> "$GITHUB_ENV"
+
+      - name: Commit and push data update
+        working-directory: web-repo
+        env:
+          TARGET_DATA_PATH: ${{ env.TARGET_DATA_PATH }}
+        run: |
+          if [ -z "$(git status --short -- "$TARGET_DATA_PATH")" ]; then
+            echo "No web data changes to publish."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$TARGET_DATA_PATH"
+          git commit -m "Update league site data from $GITHUB_REPOSITORY@$GITHUB_SHA"
+          git push
+
+      - name: Publish summary
+        env:
+          GITHUB_STEP_SUMMARY_PATH: ${{ github.step_summary }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          manifest_path = Path("build/league-site-data/manifests/league-index.json")
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          lines = [
+              "## League Site Data Publish",
+              "",
+              f"- Source repo: `{manifest.get('sourceRepo', 'unknown')}`",
+              f"- Source commit: `{manifest.get('sourceCommit', 'unknown')}`",
+              f"- Leagues exported: `{len(manifest.get('leagues', []))}`",
+          ]
+          for league in manifest.get("leagues", []):
+              view_keys = ", ".join(view["key"] for view in league.get("views", []))
+              lines.append(f"- League `{league['leagueId']}` views: `{view_keys}`")
+
+          summary_path = Path(os.environ["GITHUB_STEP_SUMMARY_PATH"])
+          with summary_path.open("a", encoding="utf-8") as handle:
+              handle.write("\n".join(lines) + "\n")
+          PY
